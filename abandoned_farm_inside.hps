@@ -1,0 +1,48 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+PlayMusic("abandoned_farm_1", true, 2, 0, 1, true);
+SetSanityDrainDisabled(true);
+AddEntityCollideCallback("Player", "change_music_1", "tension_1", false, 0);
+AddEntityCollideCallback("Player", "change_music_2", "tension_2", false, 0);
+AddEntityCollideCallback("Player", "change_music_3", "tension_0", false, 0);
+AddEntityCollideCallback("Player", "change_music_4", "tension_2", false, 0);
+AddEntityCollideCallback("Player", "change_music_5", "tension_1", false, 0);
+AddEntityCollideCallback("Player", "change_music_6", "tension_0", false, 0);
+AddUseItemCallback("unlock_basement", "basement_key", "basement_entrance", "basement_unlock", true);
+AddUseItemCallback("unlock_bedroom", "bedroom_key", "bedroom_door", "bedroom_unlock", true);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+void tension_0(string &in asParent, string &in asChild, int alState) {
+	StopMusic(10, 1);
+}
+void tension_1(string &in asParent, string &in asChild, int alState) {
+	PlayMusic("abandoned_farm_1", true, 2, 6, 1, true);
+}
+void tension_2(string &in asParent, string &in asChild, int alState) {
+	PlayMusic("abandoned_farm_2", true, 2, 6, 1, true);
+}
+void basement_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("unlock_door", "unlock_door.snt", "Player", 0.1f, false);
+	SetLevelDoorLocked("basement_entrance", false);
+}
+void bedroom_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("unlock_door", "unlock_door.snt", "Player", 0.1f, false);
+	SetSwingDoorLocked("bedroom_door", false, true);
+}

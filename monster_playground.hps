@@ -1,0 +1,550 @@
+// CONSTANTS
+float COREBOXES_TIMER = 2.0f;
+float MONSTER_ACTION_TIMER = 2.5f;
+float MONSTER_ACTION_WAITING_TIMER = 5.0f;
+float MONSTER_ACTION_FORCE = 6;
+float MONSTER_ACTION_PERCENTAGE = 40;
+float MONSTER_CHANGE_ZONE_PERCENTAGE = 65;
+
+
+// CORE
+
+void OnStart()
+{
+    // corebox colliders
+    AddEntityCollideCallback('bob', 'corebox1', 'CheckMonsterInBox', false, 0);
+    AddEntityCollideCallback('bob', 'corebox2', 'CheckMonsterInBox', false, 0);
+    AddEntityCollideCallback('bob', 'corebox3', 'CheckMonsterInBox', false, 0);
+
+    // closet colliders
+    AddEntityCollideCallback('bob', 'closet1_1', 'CheckMonsterWaits', false, 0);
+    AddEntityCollideCallback('bob', 'closet1_2', 'CheckMonsterWaits', false, 0);        
+    AddEntityCollideCallback('bob', 'closet2_1', 'CheckMonsterWaits', false, 0);        
+    AddEntityCollideCallback('bob', 'closet2_2', 'CheckMonsterWaits', false, 0);     
+    AddEntityCollideCallback('bob', 'closet3_1', 'CheckMonsterWaits', false, 0);
+    AddEntityCollideCallback('bob', 'closet3_2', 'CheckMonsterWaits', false, 0);
+
+    // player gate colliders
+    AddEntityCollideCallback('Player', 'gate1_2', 'ChangePlayerZone1', false, 0);
+    AddEntityCollideCallback('Player', 'gate1_3', 'ChangePlayerZone1', false, 0);
+    AddEntityCollideCallback('Player', 'gate2_1', 'ChangePlayerZone2', false, 0);
+    AddEntityCollideCallback('Player', 'gate2_3', 'ChangePlayerZone2', false, 0);
+    AddEntityCollideCallback('Player', 'gate3_1', 'ChangePlayerZone3', false, 0);
+    AddEntityCollideCallback('Player', 'gate3_2', 'ChangePlayerZone3', false, 0);
+
+    // monster gate colliders
+    AddEntityCollideCallback('bob', 'gate1_2', 'ChangeMonsterZone1', false, 0);
+    AddEntityCollideCallback('bob', 'gate1_3', 'ChangeMonsterZone1', false, 0);
+    AddEntityCollideCallback('bob', 'gate2_1', 'ChangeMonsterZone2', false, 0);
+    AddEntityCollideCallback('bob', 'gate2_3', 'ChangeMonsterZone2', false, 0);
+    AddEntityCollideCallback('bob', 'gate3_1', 'ChangeMonsterZone3', false, 0);
+    AddEntityCollideCallback('bob', 'gate3_2', 'ChangeMonsterZone3', false, 0);
+
+}
+
+void OnEnter()
+{ 
+    SetEnemySanityDecreaseActive('bob', false);
+    SetCorePath1('bob');
+    SetLocalVarInt('CurrentPlayerZone', 1);
+}
+
+void OnLeave()
+{ }
+
+// COLLIDERS CALLBACKS
+
+// change player zone
+
+void ChangePlayerZone1(string asParent, string asChild, int alState)
+{
+    SetLocalVarInt('CurrentPlayerZone', 1);
+}
+
+void ChangePlayerZone2(string asParent, string asChild, int alState)
+{
+    SetLocalVarInt('CurrentPlayerZone', 2);
+}
+
+void ChangePlayerZone3(string asParent, string asChild, int alState)
+{
+    SetLocalVarInt('CurrentPlayerZone', 3);
+}
+
+// change monster zone
+
+void ChangeMonsterZone1(string asParent, string asChild, int alState)
+{
+    if (GetLocalVarInt('CurrentPlayerZone') == 1)
+    {
+        ClearEnemyPatrolNodes(asParent);
+        SetCorePath1(asParent);
+    }
+}
+
+void ChangeMonsterZone2(string asParent, string asChild, int alState)
+{
+    if (GetLocalVarInt('CurrentPlayerZone') == 2)
+    {
+        ClearEnemyPatrolNodes(asParent);
+        SetCorePath2(asParent);
+    }
+}
+
+void ChangeMonsterZone3(string asParent, string asChild, int alState)
+{
+    if (GetLocalVarInt('CurrentPlayerZone') == 3)
+    {
+        ClearEnemyPatrolNodes(asParent);
+        SetCorePath3(asParent);
+    }
+}
+
+void CheckMonsterWaits(string asParent, string asChild, int alState)
+{
+    string functionName = 'MonsterAction_' + asChild;
+    Log('openning : ' + functionName);
+    Log('parent is : ' + asParent);
+    AddTimer(asParent, MONSTER_ACTION_TIMER, functionName);
+}
+
+void CheckMonsterInBox(string asParent, string asChild, int alState)
+{
+    if (asChild == 'corebox1')
+    {
+        AddTimer(asParent, COREBOXES_TIMER, 'ChooseNewPath1');
+    } 
+    else if (asChild == 'corebox2')
+    {
+        AddTimer(asParent, COREBOXES_TIMER, 'ChooseNewPath2');
+    }
+    else if (asChild == 'corebox3')
+    {
+        AddTimer(asParent, COREBOXES_TIMER, 'ChooseNewPath3');
+    }
+
+}
+
+// TIMERS CALLBACKS
+
+// - Timers for paths
+
+void ChooseNewPath1(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'corebox1'))
+    {
+        ClearEnemyPatrolNodes(monsterName);
+        
+        int isChangingZone = RandInt(0, 100);
+        if (isChangingZone <= MONSTER_CHANGE_ZONE_PERCENTAGE)
+        {
+            int currentPlayerZone = GetLocalVarInt('CurrentPlayerZone');
+            switch(currentPlayerZone)
+            {
+                case 2: 
+                    SetInterPath12(monsterName);
+                    Log('choose change 1 -> 2');
+                    return;
+                case 3: 
+                    SetInterPath13(monsterName);
+                    Log('choose change 1 -> 3');
+                    return;
+                default: break;
+            }
+        }
+        
+        switch(RandInt(1, 4))
+        {    
+            case 1:
+                SetPath1_1(monsterName);
+                Log('choose 1');
+                break;
+            case 2:
+                SetPath1_2(monsterName);
+                Log('choose 2');
+                break;
+            case 3:
+                SetPath1_3(monsterName);
+                Log('choose 3');
+                break;
+            case 4:
+                SetPath1_4(monsterName);
+                Log('choose 4');
+                break;
+            default: break;
+        }
+    }
+}
+
+void ChooseNewPath2(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'corebox2'))
+    {
+        ClearEnemyPatrolNodes(monsterName);
+
+        int isChangingZone = RandInt(0, 100);
+        if (isChangingZone <= MONSTER_CHANGE_ZONE_PERCENTAGE)
+        {
+            int currentPlayerZone = GetLocalVarInt('CurrentPlayerZone');
+            switch(currentPlayerZone)
+            {
+                case 1: 
+                    SetInterPath21(monsterName);
+                    Log('choose change 2 -> 1');
+                    return;
+                case 3: 
+                    SetInterPath23(monsterName);
+                    Log('choose change 2 -> 3');
+                    return;
+                default: break;
+            }
+        }
+        
+        switch(RandInt(1, 4))
+        {    
+            case 1:
+                SetPath2_1(monsterName);
+                Log('choose 1');
+                break;
+            case 2:
+                SetPath2_2(monsterName);
+                Log('choose 2');
+                break;
+            case 3:
+                SetPath2_3(monsterName);
+                Log('choose 3');
+                break;
+            case 4:
+                SetPath2_4(monsterName);
+                Log('choose 4');
+                break;
+            default: break;
+        }
+    }
+}
+
+void ChooseNewPath3(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'corebox3'))
+    {
+        ClearEnemyPatrolNodes(monsterName);
+
+        int isChangingZone = RandInt(0, 100);
+        if (isChangingZone <= MONSTER_CHANGE_ZONE_PERCENTAGE)
+        {
+            int currentPlayerZone = GetLocalVarInt('CurrentPlayerZone');
+            switch(currentPlayerZone)
+            {
+                case 1: 
+                    SetInterPath31(monsterName);
+                    Log('choose change 3 -> 1');
+                    return;
+                 case 2: 
+                    SetInterPath32(monsterName);
+                    Log('choose change 3 -> 2');
+                    return;
+                default: break;
+            }
+        }
+        
+        switch(RandInt(1, 4))
+        {    
+            case 1:
+                SetPath3_1(monsterName);
+                Log('choose 1');
+                break;
+            case 2:
+                SetPath3_2(monsterName);
+                Log('choose 2');
+                break;
+            case 3:
+                SetPath3_3(monsterName);
+                Log('choose 3');
+                break;
+            case 4:
+                SetPath3_4(monsterName);
+                Log('choose 4');
+                break;
+            default: break;
+        }
+    }
+}
+
+// - Timers for closets
+
+void MonsterAction_closet1_1(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'closet1_1'))
+    {
+        // open closet
+        AddPropImpulse('closetProp1_1', -MONSTER_ACTION_FORCE, 0, 0, '');
+    }
+}
+
+void MonsterAction_closet1_2(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'closet1_2'))
+    {
+        // open closet
+        AddPropImpulse('closetProp1_2', MONSTER_ACTION_FORCE/2, 0, -MONSTER_ACTION_FORCE/2, '');
+    }
+}
+
+void MonsterAction_closet2_2(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'closet2_2'))
+    {
+        // open closet
+        AddPropImpulse('closetProp2_2', 0, 0, MONSTER_ACTION_FORCE, '');
+    }
+}
+
+void MonsterAction_closet2_1(string monsterName)
+{
+    if (GetEntitiesCollide(monsterName, 'closet2_1'))
+    {
+        // open closet
+        AddPropImpulse('closetProp2_1', MONSTER_ACTION_FORCE/2, 0, -MONSTER_ACTION_FORCE/2, '');
+    }
+}
+
+// PATHS SETTERS
+
+// Paths core 1
+
+void SetPath1_1(string monsterName)
+{
+    SetCorePath1(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode1_8', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_9', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_7', 0.1f, '');
+
+}
+
+void SetPath1_2(string monsterName)
+{
+    SetCorePath1(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode1_1', GetWaitingTime(MONSTER_ACTION_PERCENTAGE), '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_2', 0.1f, '');
+
+}
+
+void SetPath1_3(string monsterName)
+{
+    SetCorePath1(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode1_4', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_5', GetWaitingTime(MONSTER_ACTION_PERCENTAGE), '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_6', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_3', 0.1f, '');
+
+}
+
+void SetPath1_4(string monsterName)
+{
+    SetCorePath1(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode1_10', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_11', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_16', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_13', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_12', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_14', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_15', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_11', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode1_10', 0.1f, '');
+
+}
+
+void SetInterPath12(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_1', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_4', 0.1f, '');
+}
+
+void SetInterPath13(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_1', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_4', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_5', 0.1f, '');
+}
+
+// Paths core 2
+
+void SetPath2_1(string monsterName)
+{
+    SetCorePath2(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode2_7', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_9', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_10', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_11', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_8', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_7', 0.1f, '');
+
+}
+
+void SetPath2_2(string monsterName)
+{
+    SetCorePath2(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode2_1', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_4', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_5', GetWaitingTime(MONSTER_ACTION_PERCENTAGE), '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_1', 0.1f, '');
+
+}
+
+void SetPath2_3(string monsterName)
+{
+    SetCorePath2(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode2_12', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_18', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_19', GetWaitingTime(MONSTER_ACTION_PERCENTAGE), '');
+
+}
+
+void SetPath2_4(string monsterName)
+{
+    SetCorePath2(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode2_12', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_13', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_14', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_15', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_16', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_17', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_14', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode2_13', 0.1f, '');  
+    AddEnemyPatrolNode(monsterName, 'corenode2_12', 0.1f, '');  
+
+}
+
+void SetInterPath21(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_4', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode12_1', 0.1f, '');
+}
+
+void SetInterPath23(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'interCorenode23_1', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode23_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode23_3', 0.1f, '');
+}
+
+// Paths core 3
+
+void SetPath3_1(string monsterName)
+{
+    SetCorePath3(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode3_14', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_15', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_16', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_17', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_14', 0.1f, '');
+
+}
+
+void SetPath3_2(string monsterName)
+{
+    SetCorePath3(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode3_14', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_18', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_19', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_20', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_21', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_22', GetWaitingTime(MONSTER_ACTION_PERCENTAGE), '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_18', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_14', 0.1f, '');
+
+}
+
+void SetPath3_3(string monsterName)
+{
+    SetCorePath3(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode3_1', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_7', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_8', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_9', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_10', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_11', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_12', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_13', GetWaitingTime(MONSTER_ACTION_PERCENTAGE), '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_8', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_7', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_1', 0.1f, '');
+}
+
+void SetPath3_4(string monsterName)
+{
+    SetCorePath3(monsterName);
+    AddEnemyPatrolNode(monsterName, 'corenode3_1', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_4', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_5', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_6', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'corenode3_1', 0.1f, '');
+
+}
+
+void SetInterPath31(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_5', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_4', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode13_1', 0.1f, '');
+}
+
+void SetInterPath32(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'interCorenode23_3', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode23_2', 0.1f, '');
+    AddEnemyPatrolNode(monsterName, 'interCorenode23_1', 0.1f, '');
+}
+
+
+// UTILS
+
+// Initial core nodes
+
+void SetCorePath1(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'core_1', 2.0f, '');
+}
+
+void SetCorePath2(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'core_2', 2.0f, '');
+}
+
+void SetCorePath3(string monsterName)
+{
+    AddEnemyPatrolNode(monsterName, 'core_3', 2.0f, '');
+}
+
+// Others
+
+void Log(string msg)
+{
+    AddDebugMessage(msg, false);
+}
+
+float GetWaitingTime(int monsterChancePercentage)
+{
+    int isWaiting = RandInt(0, 100);
+    float waitingTime = 0.1f;
+    if (isWaiting <= monsterChancePercentage) 
+    {
+        waitingTime = MONSTER_ACTION_WAITING_TIMER;
+    }
+    return waitingTime;
+}

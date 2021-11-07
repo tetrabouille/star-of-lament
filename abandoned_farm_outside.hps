@@ -1,0 +1,26 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+	AddEntityCollideCallback("Player", "exit_to_lake_side", "change_map_1", false, 0);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+
+void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("lake_side", "abandoned_farm_outside_exit", "", "");
+}
