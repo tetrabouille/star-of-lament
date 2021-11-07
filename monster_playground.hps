@@ -1,11 +1,32 @@
 // CONSTANTS
-float COREBOXES_TIMER = 2.0f;
-float MONSTER_ACTION_TIMER = 2.5f;
-float MONSTER_ACTION_WAITING_TIMER = 5.0f;
-float MONSTER_ACTION_FORCE = 6;
-float MONSTER_ACTION_PERCENTAGE = 40;
-float MONSTER_CHANGE_ZONE_PERCENTAGE = 65;
+const float COREBOXES_TIMER = 2.0f;
+const float MONSTER_ACTION_TIMER = 2.5f;
+const float MONSTER_ACTION_WAITING_TIMER = 5.0f;
+const float MONSTER_ACTION_FORCE = 6;
+const float MONSTER_ACTION_PERCENTAGE = 40;
+const float MONSTER_CHANGE_ZONE_PERCENTAGE = 65;
 
+const string DEBUG_TAG = 'mush';
+
+enum DayState {
+    Morning,
+    Midday,
+    Evening,
+    Night
+};
+
+enum StaminaThreshold {
+    MiddayThreshold = 75,
+    EveningThreshold = 50,
+    NightThreshold = 25
+};
+
+class MushroomBox {
+    string mushroomType;
+    bool isPasted;
+    bool isBoosted;
+    bool isWasted;
+};
 
 // CORE
 
@@ -40,6 +61,14 @@ void OnStart()
     AddEntityCollideCallback('bob', 'gate3_1', 'ChangeMonsterZone3', false, 0);
     AddEntityCollideCallback('bob', 'gate3_2', 'ChangeMonsterZone3', false, 0);
 
+    // Debug - stamina button
+    SetEntityConnectionStateChangeCallback('debugStamina', 'switchStaminaPhase');
+
+    // On Game Start, move this to global.hps !
+    SetGlobalVarInt('DAY_STATE', 0); // morning
+    SetGlobalVarFloat('STAMINA', 100);
+    PassTime('stamina');
+    
 }
 
 void OnEnter()
@@ -47,10 +76,74 @@ void OnEnter()
     SetEnemySanityDecreaseActive('bob', false);
     SetCorePath1('bob');
     SetLocalVarInt('CurrentPlayerZone', 1);
+
+    // Mushrooms setup
+    SetEntityVisible('fungiBig_1', true);
+    SetEntityVisible('fungiMedium_1', false);
+    SetEntityVisible('fungiSmall_1', false);
+
+    Test test();
+    test._name = "Bob";
+    Log(test.getStuff(), 'mush');
 }
 
 void OnLeave()
 { }
+
+// MUSHROOMS
+
+// - Daytime (stamina) timer.
+void PassTime(string name)
+{
+    StopCurrentInsanityEvent();
+    // Decrease stamina and sanity
+    AddGlobalVarFloat('STAMINA', -1.0f);
+    SetPlayerSanity(GetGlobalVarFloat('STAMINA'));
+
+    float stamina = GetGlobalVarFloat('STAMINA');
+    float dayState = GetGlobalVarInt('DAY_STATE');
+    
+    Log('stamina : ' + stamina, 'mush');
+    
+    if (stamina <= 0)
+    {
+        Log('You fall asleep and wake up in night world...', 'mush');
+        return;
+    }
+    AddTimer('sanity', 1.0f, 'PassTime');
+    // Change day state
+    if (stamina < StaminaThreshold::NightThreshold && dayState == DayState::Evening) dayState = DayState::Night;
+    else if (stamina < StaminaThreshold::EveningThreshold && dayState == DayState::Midday) dayState = DayState::Evening;
+    else if (stamina < StaminaThreshold::MiddayThreshold && dayState == DayState::Morning) dayState = DayState::Midday;
+    SetGlobalVarInt('DAY_STATE', dayState);
+    Log(GetGlobalVarInt('DAY_STATE') + '', 'mush');
+}
+
+// Change mushroom state
+void updateMushrooms()
+{
+
+}
+
+// Reset day
+void resetDay()
+{
+    SetGlobalVarFloat('STAMINA', 100);
+    SetGlobalVarInt('DAY_STATE', 0);
+    RemoveTimer('sanity');
+    AddTimer('sanity', 1.0f, 'PassTime');
+}
+
+// Debug mushrooms - set sanity
+void switchStaminaPhase(string name, int levelState) 
+{
+    int delay = 3;
+    int dayState = GetGlobalVarInt('DAY_STATE');
+    if (dayState == DayState::Evening) SetGlobalVarFloat('STAMINA', StaminaThreshold::NightThreshold - delay);
+    else if (dayState == DayState::Midday) SetGlobalVarFloat('STAMINA', StaminaThreshold::EveningThreshold - delay);
+    else if (dayState == DayState::Morning) SetGlobalVarFloat('STAMINA', StaminaThreshold::MiddayThreshold - delay);
+    else if (dayState == DayState::Night) resetDay();
+}
 
 // COLLIDERS CALLBACKS
 
@@ -103,8 +196,8 @@ void ChangeMonsterZone3(string asParent, string asChild, int alState)
 void CheckMonsterWaits(string asParent, string asChild, int alState)
 {
     string functionName = 'MonsterAction_' + asChild;
-    Log('openning : ' + functionName);
-    Log('parent is : ' + asParent);
+    Log('openning : ' + functionName, 'monster');
+    Log('parent is : ' + asParent, 'monster');
     AddTimer(asParent, MONSTER_ACTION_TIMER, functionName);
 }
 
@@ -143,11 +236,11 @@ void ChooseNewPath1(string monsterName)
             {
                 case 2: 
                     SetInterPath12(monsterName);
-                    Log('choose change 1 -> 2');
+                    Log('choose change 1 -> 2', 'monster');
                     return;
                 case 3: 
                     SetInterPath13(monsterName);
-                    Log('choose change 1 -> 3');
+                    Log('choose change 1 -> 3', 'monster');
                     return;
                 default: break;
             }
@@ -157,19 +250,19 @@ void ChooseNewPath1(string monsterName)
         {    
             case 1:
                 SetPath1_1(monsterName);
-                Log('choose 1');
+                Log('choose 1', 'monster');
                 break;
             case 2:
                 SetPath1_2(monsterName);
-                Log('choose 2');
+                Log('choose 2', 'monster');
                 break;
             case 3:
                 SetPath1_3(monsterName);
-                Log('choose 3');
+                Log('choose 3', 'monster');
                 break;
             case 4:
                 SetPath1_4(monsterName);
-                Log('choose 4');
+                Log('choose 4', 'monster');
                 break;
             default: break;
         }
@@ -190,11 +283,11 @@ void ChooseNewPath2(string monsterName)
             {
                 case 1: 
                     SetInterPath21(monsterName);
-                    Log('choose change 2 -> 1');
+                    Log('choose change 2 -> 1', 'monster');
                     return;
                 case 3: 
                     SetInterPath23(monsterName);
-                    Log('choose change 2 -> 3');
+                    Log('choose change 2 -> 3', 'monster');
                     return;
                 default: break;
             }
@@ -204,19 +297,19 @@ void ChooseNewPath2(string monsterName)
         {    
             case 1:
                 SetPath2_1(monsterName);
-                Log('choose 1');
+                Log('choose 1', 'monster');
                 break;
             case 2:
                 SetPath2_2(monsterName);
-                Log('choose 2');
+                Log('choose 2', 'monster');
                 break;
             case 3:
                 SetPath2_3(monsterName);
-                Log('choose 3');
+                Log('choose 3', 'monster');
                 break;
             case 4:
                 SetPath2_4(monsterName);
-                Log('choose 4');
+                Log('choose 4', 'monster');
                 break;
             default: break;
         }
@@ -237,11 +330,11 @@ void ChooseNewPath3(string monsterName)
             {
                 case 1: 
                     SetInterPath31(monsterName);
-                    Log('choose change 3 -> 1');
+                    Log('choose change 3 -> 1', 'monster');
                     return;
                  case 2: 
                     SetInterPath32(monsterName);
-                    Log('choose change 3 -> 2');
+                    Log('choose change 3 -> 2', 'monster');
                     return;
                 default: break;
             }
@@ -251,19 +344,19 @@ void ChooseNewPath3(string monsterName)
         {    
             case 1:
                 SetPath3_1(monsterName);
-                Log('choose 1');
+                Log('choose 1', 'monster');
                 break;
             case 2:
                 SetPath3_2(monsterName);
-                Log('choose 2');
+                Log('choose 2', 'monster');
                 break;
             case 3:
                 SetPath3_3(monsterName);
-                Log('choose 3');
+                Log('choose 3', 'monster');
                 break;
             case 4:
                 SetPath3_4(monsterName);
-                Log('choose 4');
+                Log('choose 4', 'monster');
                 break;
             default: break;
         }
@@ -511,7 +604,6 @@ void SetInterPath32(string monsterName)
     AddEnemyPatrolNode(monsterName, 'interCorenode23_1', 0.1f, '');
 }
 
-
 // UTILS
 
 // Initial core nodes
@@ -533,9 +625,9 @@ void SetCorePath3(string monsterName)
 
 // Others
 
-void Log(string msg)
+void Log(string msg, string tag)
 {
-    AddDebugMessage(msg, false);
+    if (DEBUG_TAG == "ALL" || DEBUG_TAG == tag) AddDebugMessage(msg, false);
 }
 
 float GetWaitingTime(int monsterChancePercentage)
