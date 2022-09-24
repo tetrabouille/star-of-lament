@@ -1,0 +1,636 @@
+<Level>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="false" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="20.5 0 106.25" CameraTarget="20.5 0 -73.75" CameraZoom="0" GridHeight="-73.75" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="200.5 0 -73.75" CameraTarget="20.5 0 -73.75" CameraZoom="0" GridHeight="20.5" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 192 0" CameraTarget="0 12 0" CameraZoom="0" GridHeight="12" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="5.36368 21.4362 65.4913" CameraTarget="-6.38507 -3.87489 41.1327" CameraZoom="0.3" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+        <Groups>
+            <Group ID="0" Name="None" Visible="true" />
+        </Groups>
+    </EditorSession>
+    <MapData FogActive="false" FogColor="0.034 0.068 0.102 1" FogCulling="true" FogEnd="125" FogFalloffExp="0.5" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="true" SkyBoxColor="0 0 0 1" SkyBoxTexture="../../../../">
+        <MapContents>
+            <FileIndex_StaticObjects NumOfFiles="25">
+                <File Id="0" Path="static_objects/streets/streets/streets_pavement_2x2_corner.dae" />
+                <File Id="1" Path="static_objects/streets/streets/streets_pavement_2x4.dae" />
+                <File Id="2" Path="static_objects/streets/buildings/streets_windows_plain_dirty.dae" />
+                <File Id="3" Path="static_objects/streets/buildings/streets_windows_4m_dirty.dae" />
+                <File Id="4" Path="static_objects/streets/buildings/streets_windows_4m_dirty_broken.dae" />
+                <File Id="5" Path="static_objects/streets/buildings/streets_windows_4m.dae" />
+                <File Id="6" Path="static_objects/streets/streets/streets_road_6x8_straight.dae" />
+                <File Id="7" Path="static_objects/streets/streets/streets_road_6x6_tjunction.dae" />
+                <File Id="8" Path="static_objects/streets/streets/streets_pavement_2x8.dae" />
+                <File Id="9" Path="static_objects/streets/buildings/streets_buildings_type3_window.dae" />
+                <File Id="10" Path="static_objects/streets/buildings/streets_buildings_type3_groundfloor_door_open.dae" />
+                <File Id="11" Path="static_objects/streets/buildings/streets_buildings_fronts_candj.dae" />
+                <File Id="12" Path="static_objects/streets/buildings/streets_buildings_fronts_wood.dae" />
+                <File Id="13" Path="static_objects/streets/buildings/streets_windows_plain.dae" />
+                <File Id="14" Path="static_objects/streets/buildings/streets_buildings_terrace_interior_simple_nointerior.dae" />
+                <File Id="15" Path="static_objects/streets/buildings/streets_buildings_terrace_interior.dae" />
+                <File Id="16" Path="static_objects/streets/buildings/streets_buildings_terrace_door.dae" />
+                <File Id="17" Path="static_objects/streets/buildings/streets_windows_plain_brick_white.dae" />
+                <File Id="18" Path="static_objects/streets/buildings/streets_windows_4m_white.dae" />
+                <File Id="19" Path="static_objects/streets/buildings/streets_windows_plain_white.dae" />
+                <File Id="20" Path="static_objects/streets/buildings/streets_buildings_fronts_generic_01.dae" />
+                <File Id="21" Path="static_objects/streets/buildings/streets_buildings_type3_window_large.dae" />
+                <File Id="22" Path="static_objects/streets/buildings/streets_buildings_type3_groundfloor_door.dae" />
+                <File Id="23" Path="static_objects/streets/buildings/street_buildings_steps_small.dae" />
+                <File Id="24" Path="static_objects/streets/buildings/streets_windows_8m.dae" />
+            </FileIndex_StaticObjects>
+            <FileIndex_Entities NumOfFiles="1">
+                <File Id="0" Path="entities/item/lantern/lantern.ent" />
+            </FileIndex_Entities>
+            <FileIndex_Decals NumOfFiles="0" />
+            <StaticObjects>
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="8" Name="streets_streets_road_6x8_straight_1" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="12" Name="streets_streets_road_6x6_tjunction_1" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="20" Name="streets_streets_pavement_2x4_9" Rotation="3.14159 -4.44253e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="21" Name="streets_streets_pavement_2x2_corner_1" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 0 -2" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="22" Name="streets_streets_pavement_2x2_corner_2" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="24" Name="streets_streets_road_6x8_straight_2" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="30" Name="streets_streets_road_6x8_straight_3" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="34" Name="streets_streets_road_6x8_straight_4" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 -8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="35" Name="streets_streets_pavement_2x8_1" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 0 -2" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="36" Name="streets_streets_pavement_2x8_2" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 -8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="10" Group="0" ID="39" Name="buildings_streets_buildings_type3_groundfloor_door_open_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 0 -4.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="11" Group="0" ID="41" Name="buildings_streets_buildings_fronts_candj_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="56" Name="buildings_streets_buildings_type3_window_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 0 -0.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="57" Name="buildings_streets_buildings_type3_window_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 0 -8.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="12" Group="0" ID="61" Name="buildings_streets_buildings_fronts_wood_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -14.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="62" Name="buildings_streets_windows_4m_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 5.25 -8.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="63" Name="buildings_streets_windows_4m_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 5.25 -0.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="64" Name="buildings_streets_windows_4m_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 5.25 3.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="65" Name="buildings_streets_windows_4m_4" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 5.25 7.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="66" Name="buildings_streets_windows_4m_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.25 5.25 -4.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="70" Name="buildings_streets_windows_4m_dirty_broken_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 4 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="71" Name="buildings_streets_windows_4m_dirty_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 4 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="72" Name="buildings_streets_windows_plain_dirty_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="73" Name="buildings_streets_windows_plain_dirty_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 0 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="74" Name="buildings_streets_windows_plain_dirty_3" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.75 4 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="75" Name="buildings_streets_windows_plain_dirty_4" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.75 8 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="76" Name="buildings_streets_windows_4m_dirty_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 8 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="77" Name="buildings_streets_windows_4m_dirty_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 8 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="78" Name="buildings_streets_windows_plain_dirty_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 0 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="79" Name="buildings_streets_windows_plain_dirty_6" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 0 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="80" Name="buildings_streets_windows_4m_dirty_4" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 4 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="81" Name="buildings_streets_windows_4m_dirty_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 8 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="83" Name="buildings_streets_windows_4m_dirty_7" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="84" Name="buildings_streets_windows_4m_dirty_8" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="85" Name="buildings_streets_windows_plain_dirty_7" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="86" Name="buildings_streets_windows_plain_dirty_8" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 4 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="87" Name="buildings_streets_windows_plain_dirty_9" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.75 8 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="88" Name="buildings_streets_windows_plain_dirty_10" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.75 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="89" Name="buildings_streets_windows_plain_dirty_11" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.75 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="90" Name="buildings_streets_windows_plain_dirty_12" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.75 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="91" Name="buildings_streets_windows_plain_dirty_13" Rotation="-3.14159 -0 3.14159" Scale="1 1 1" Tag="" WorldPos="-9.75 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="92" Name="buildings_streets_windows_4m_dirty_9" Rotation="-3.14159 -0 3.14159" Scale="1 1 1" Tag="" WorldPos="-9.75 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="93" Name="buildings_streets_windows_4m_dirty_10" Rotation="-3.14159 -0 3.14159" Scale="1 1 1" Tag="" WorldPos="-9.75 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="95" Name="buildings_streets_windows_plain_dirty_14" Rotation="-3.14159 -0 3.14159" Scale="1 1 1" Tag="" WorldPos="-13.75 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="96" Name="buildings_streets_windows_4m_dirty_11" Rotation="-3.14159 -0 3.14159" Scale="1 1 1" Tag="" WorldPos="-13.75 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="97" Name="buildings_streets_windows_4m_dirty_12" Rotation="-3.14159 -0 3.14159" Scale="1 1 1" Tag="" WorldPos="-13.75 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="98" Name="buildings_streets_windows_plain_dirty_15" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-17.75 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="99" Name="buildings_streets_windows_plain_dirty_16" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-17.75 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="100" Name="buildings_streets_windows_plain_dirty_17" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-17.75 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="103" Name="streets_streets_pavement_2x8_3" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="104" Name="streets_streets_pavement_2x8_4" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="105" Name="streets_streets_pavement_2x8_5" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="106" Name="streets_streets_pavement_2x8_6" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="107" Name="streets_streets_pavement_2x8_7" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 32" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="108" Name="streets_streets_pavement_2x8_8" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.5 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="109" Name="streets_streets_pavement_2x8_9" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.5 0 -8.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="111" Name="streets_streets_pavement_2x8_10" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.5 0 -16.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="112" Name="streets_streets_pavement_2x8_11" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.5 0 -24.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="113" Name="streets_streets_road_6x8_straight_5" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="114" Name="streets_streets_road_6x8_straight_6" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="115" Name="streets_streets_road_6x8_straight_7" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 32" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="117" Name="streets_streets_pavement_2x8_12" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="118" Name="streets_streets_pavement_2x8_13" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="119" Name="streets_streets_pavement_2x8_14" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.5 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="120" Name="streets_streets_pavement_2x4_1" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.5 0 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="121" Name="streets_streets_pavement_2x8_15" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="122" Name="streets_streets_pavement_2x8_16" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="123" Name="streets_streets_road_6x8_straight_8" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 40" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="124" Name="streets_streets_road_6x8_straight_9" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="125" Name="streets_streets_pavement_2x8_17" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="126" Name="streets_streets_pavement_2x8_18" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 36" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="127" Name="streets_streets_pavement_2x8_19" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="128" Name="streets_streets_pavement_2x8_20" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="129" Name="streets_streets_pavement_2x8_21" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 4" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="133" Name="streets_streets_road_6x6_tjunction_2" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 88" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="134" Name="streets_streets_pavement_2x2_corner_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 82" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="135" Name="streets_streets_pavement_2x2_corner_4" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="136" Name="streets_streets_pavement_2x4_2" Rotation="3.14159 1.32722e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 76" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="15" Group="0" ID="147" Name="buildings_streets_buildings_terrace_interior_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 53.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="14" Group="0" ID="148" Name="buildings_streets_buildings_terrace_interior_simple_nointerior_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="163" Name="buildings_streets_windows_plain_1" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 0 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="164" Name="buildings_streets_windows_plain_2" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 0 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="167" Name="streets_streets_road_6x8_straight_10" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 48" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="168" Name="streets_streets_road_6x8_straight_11" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="169" Name="streets_streets_road_6x8_straight_12" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="16" Group="0" ID="170" Name="buildings_streets_buildings_terrace_door_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0.287406 51.6544" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="171" Name="streets_streets_pavement_2x8_22" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 44" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="172" Name="streets_streets_pavement_2x8_23" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 -8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="173" Name="streets_streets_pavement_2x8_24" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 52" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="174" Name="streets_streets_pavement_2x8_25" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 -16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="175" Name="streets_streets_pavement_2x8_26" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 60" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="176" Name="streets_streets_pavement_2x8_27" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 -24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="177" Name="buildings_streets_windows_plain_dirty_18" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="10.75 0 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="179" Name="buildings_streets_windows_4m_dirty_14" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="10.75 8 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="181" Name="buildings_streets_windows_4m_dirty_15" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="6.75 4 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="182" Name="buildings_streets_windows_plain_dirty_19" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="6.75 0 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="183" Name="buildings_streets_windows_plain_dirty_20" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="2.75 0 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="184" Name="buildings_streets_windows_plain_dirty_21" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="2.75 4 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="185" Name="buildings_streets_windows_plain_dirty_22" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="2.75 8 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="186" Name="buildings_streets_windows_4m_dirty_16" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="-1.25 8 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="187" Name="buildings_streets_windows_4m_dirty_17" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="-5.25 8 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="188" Name="buildings_streets_windows_4m_dirty_broken_2" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="-5.25 4 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="189" Name="buildings_streets_windows_4m_dirty_18" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="-1.25 4 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="190" Name="buildings_streets_windows_plain_dirty_23" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="-1.25 0 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="191" Name="buildings_streets_windows_plain_dirty_24" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="-5.25 0 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="193" Name="streets_streets_pavement_2x8_28" Rotation="-3.12181 1.5708 -3.12181" Scale="1 1 1" Tag="" WorldPos="14.5 0 88" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="194" Name="streets_streets_pavement_2x8_29" Rotation="-3.12181 1.5708 -3.12181" Scale="1 1 1" Tag="" WorldPos="-1.5 0 88" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="195" Name="streets_streets_pavement_2x8_30" Rotation="-3.12181 1.5708 -3.12181" Scale="1 1 1" Tag="" WorldPos="6.5 0 88" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="196" Name="streets_streets_road_6x8_straight_13" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 82" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="197" Name="streets_streets_road_6x8_straight_14" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-9.5 0 82" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="198" Name="buildings_streets_windows_4m_dirty_broken_3" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="10.75 4 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="199" Name="buildings_streets_windows_4m_dirty_broken_4" Rotation="1.74846e-007 8.74228e-008 3.82137e-015" Scale="1 1 1" Tag="" WorldPos="6.75 8 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="200" Name="buildings_streets_windows_plain_dirty_25" Rotation="0.0755894 -1.5708 -0.0755894" Scale="1 1 1" Tag="" WorldPos="10.75 0 93.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="201" Name="buildings_streets_windows_plain_dirty_26" Rotation="0.0755894 -1.5708 -0.0755894" Scale="1 1 1" Tag="" WorldPos="10.75 4 93.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="202" Name="buildings_streets_windows_plain_dirty_27" Rotation="0.0755894 -1.5708 -0.0755894" Scale="1 1 1" Tag="" WorldPos="10.75 8 93.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="203" Name="buildings_streets_windows_plain_dirty_28" Rotation="-0.0187494 1.5708 -0.0187493" Scale="1 1 1" Tag="" WorldPos="-9.25 0 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="204" Name="buildings_streets_windows_plain_dirty_29" Rotation="-0.0187494 1.5708 -0.0187493" Scale="1 1 1" Tag="" WorldPos="-9.25 4 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="205" Name="buildings_streets_windows_plain_dirty_30" Rotation="-0.0187494 1.5708 -0.0187493" Scale="1 1 1" Tag="" WorldPos="-9.25 8 89.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="207" Name="buildings_streets_windows_plain_3" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 0 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="208" Name="buildings_streets_windows_plain_4" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 0 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="210" Name="buildings_streets_windows_4m_7" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 4 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="211" Name="buildings_streets_windows_4m_8" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 8 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="212" Name="buildings_streets_windows_4m_9" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 12 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="213" Name="buildings_streets_windows_4m_10" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 16 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="214" Name="buildings_streets_windows_4m_11" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 4 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="215" Name="buildings_streets_windows_4m_12" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 8 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="216" Name="buildings_streets_windows_4m_13" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 12 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="217" Name="buildings_streets_windows_4m_14" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 16 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="218" Name="buildings_streets_windows_plain_5" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 4 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="219" Name="buildings_streets_windows_4m_15" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 8 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="220" Name="buildings_streets_windows_plain_6" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 12 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="221" Name="buildings_streets_windows_4m_16" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 16 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="222" Name="buildings_streets_windows_plain_7" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 4 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="223" Name="buildings_streets_windows_4m_17" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 8 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="224" Name="buildings_streets_windows_plain_8" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 12 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="225" Name="buildings_streets_windows_4m_18" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-1.5 16 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="226" Name="buildings_streets_windows_plain_9" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 8 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="227" Name="buildings_streets_windows_plain_10" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 12 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="228" Name="buildings_streets_windows_plain_11" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 16 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="229" Name="buildings_streets_windows_plain_12" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 8 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="232" Name="buildings_streets_windows_plain_15" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-13.5 8 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="233" Name="buildings_streets_windows_plain_16" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-13.5 12 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="234" Name="buildings_streets_windows_plain_17" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-13.5 16 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="235" Name="buildings_streets_windows_4m_19" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 12 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="236" Name="buildings_streets_windows_4m_20" Rotation="-3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 16 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="237" Name="buildings_streets_windows_plain_13" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 0 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="238" Name="buildings_streets_windows_plain_14" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 4 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="239" Name="buildings_streets_windows_plain_18" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 8 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="240" Name="buildings_streets_windows_plain_19" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 16 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="241" Name="buildings_streets_windows_plain_20" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 12 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="242" Name="buildings_streets_windows_4m_21" Rotation="0 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 12 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="243" Name="buildings_streets_windows_4m_22" Rotation="0 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 8 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="244" Name="buildings_streets_windows_4m_23" Rotation="0 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 16 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="245" Name="buildings_streets_windows_plain_21" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 4 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="246" Name="buildings_streets_windows_plain_22" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 0 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="247" Name="buildings_streets_windows_plain_23" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.5 0 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="248" Name="buildings_streets_windows_plain_24" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.5 16 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="249" Name="buildings_streets_windows_plain_25" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.5 12 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="250" Name="buildings_streets_windows_plain_26" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.5 8 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="251" Name="buildings_streets_windows_plain_27" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.5 4 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="252" Name="buildings_streets_windows_plain_28" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.5 0 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="253" Name="buildings_streets_windows_plain_29" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.5 4 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="254" Name="buildings_streets_windows_4m_24" Rotation="0 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.5 8 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="255" Name="buildings_streets_windows_4m_25" Rotation="0 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.5 12 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="256" Name="buildings_streets_windows_4m_26" Rotation="0 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.5 16 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="257" Name="buildings_streets_windows_plain_30" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-17.5 4 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="258" Name="buildings_streets_windows_plain_31" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-17.5 8 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="259" Name="buildings_streets_windows_plain_32" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-17.5 12 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="260" Name="buildings_streets_windows_plain_33" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-17.5 16 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="261" Name="buildings_streets_windows_plain_34" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-17.5 0 32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="262" Name="buildings_streets_windows_plain_dirty_31" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 0 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="263" Name="buildings_streets_windows_plain_dirty_32" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 4 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="264" Name="buildings_streets_windows_plain_dirty_33" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 8 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="266" Name="buildings_streets_windows_plain_dirty_34" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 0 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="267" Name="buildings_streets_windows_4m_dirty_13" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 4 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="268" Name="buildings_streets_windows_4m_dirty_19" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 8 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="276" Name="buildings_streets_windows_4m_dirty_20" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 8 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="277" Name="buildings_streets_windows_plain_dirty_35" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="278" Name="buildings_streets_windows_4m_dirty_21" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 4 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="279" Name="buildings_streets_windows_plain_dirty_36" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 0 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="280" Name="buildings_streets_windows_plain_dirty_37" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 4 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="281" Name="buildings_streets_windows_plain_dirty_38" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 8 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="282" Name="buildings_streets_windows_plain_dirty_39" Rotation="-1.10715 1.5708 -1.10715" Scale="1 1 1" Tag="" WorldPos="-17.75 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="283" Name="buildings_streets_windows_plain_dirty_40" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 4 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="284" Name="buildings_streets_windows_plain_dirty_41" Rotation="-2.96804 1.5708 -2.96804" Scale="1 1 1" Tag="" WorldPos="-17.75 8 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="291" Name="buildings_streets_windows_plain_brick_white_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 63" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="292" Name="buildings_streets_windows_plain_brick_white_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 71" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="293" Name="buildings_streets_windows_plain_brick_white_4" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 67" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="324" Name="streets_streets_road_6x8_straight_15" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="326" Name="streets_streets_pavement_2x8_31" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 -32" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="327" Name="streets_streets_pavement_2x8_32" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 68" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="328" Name="buildings_streets_windows_plain_brick_white_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="329" Name="streets_streets_pavement_2x8_33" Rotation="-3.0851 1.5708 -3.0851" Scale="1 1 1" Tag="" WorldPos="-1.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="330" Name="streets_streets_pavement_2x8_34" Rotation="-0.0049212 -1.5708 0.00492167" Scale="1 1 1" Tag="" WorldPos="8.5 0 82" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="331" Name="buildings_streets_windows_plain_brick_white_6" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="332" Name="buildings_streets_windows_plain_brick_white_7" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 0 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="333" Name="buildings_streets_windows_plain_brick_white_8" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 0 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="334" Name="buildings_streets_windows_plain_brick_white_9" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-13.5 0 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="335" Name="buildings_streets_windows_4m_white_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="337" Name="buildings_streets_windows_4m_white_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 71" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="338" Name="buildings_streets_windows_plain_white_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="339" Name="buildings_streets_windows_plain_white_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 67" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="340" Name="buildings_streets_windows_4m_white_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 63" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="341" Name="buildings_streets_windows_4m_white_4" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="342" Name="buildings_streets_windows_4m_white_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 71" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="343" Name="buildings_streets_windows_4m_white_6" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 63" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="344" Name="buildings_streets_windows_4m_white_7" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="345" Name="buildings_streets_windows_4m_white_8" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 67" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="349" Name="buildings_streets_windows_4m_white_9" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="350" Name="buildings_streets_windows_4m_white_10" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 67" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="351" Name="buildings_streets_windows_plain_white_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 63" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="352" Name="buildings_streets_windows_plain_white_4" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 71" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="353" Name="buildings_streets_windows_plain_white_5" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 79" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="355" Name="buildings_streets_windows_plain_white_6" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 12 59" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="356" Name="buildings_streets_windows_plain_white_7" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 8 59" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="359" Name="buildings_streets_windows_plain_white_8" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 8 59" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="360" Name="buildings_streets_windows_plain_white_9" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 12 59" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="20" Group="0" ID="361" Name="buildings_streets_buildings_fronts_generic_2" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-0.819305 0 67.7078" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="364" Name="buildings_streets_windows_plain_dirty_42" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.75 4 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="365" Name="buildings_streets_windows_plain_dirty_43" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.75 8 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="366" Name="buildings_streets_windows_plain_dirty_44" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.75 4 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="367" Name="buildings_streets_windows_plain_dirty_45" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-9.75 8 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="368" Name="buildings_streets_windows_plain_dirty_46" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.75 4 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="369" Name="buildings_streets_windows_plain_dirty_47" Rotation="-1.34801e-016 -2.17557e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-13.75 8 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="370" Name="buildings_streets_windows_plain_35" Rotation="3.14159 7.15493e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-6.25 5.25 7.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="372" Name="buildings_streets_windows_plain_36" Rotation="3.14159 7.15493e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-10.25 5.25 7.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="373" Name="buildings_streets_windows_plain_37" Rotation="3.14159 7.15493e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-18.25 5.25 7.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="374" Name="buildings_streets_windows_plain_38" Rotation="3.14159 7.15493e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-14.25 5.25 7.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="375" Name="buildings_streets_windows_plain_39" Rotation="3.08382e-009 -4.64916e-006 2.34248e-008" Scale="1 1 1" Tag="" WorldPos="-2.25 5.25 -12.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="388" Name="streets_streets_road_6x8_straight_16" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="389" Name="streets_streets_pavement_2x8_35" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="390" Name="streets_streets_pavement_2x8_36" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="391" Name="streets_streets_pavement_2x8_37" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 -34" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="392" Name="streets_streets_pavement_2x8_38" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="393" Name="streets_streets_pavement_2x8_39" Rotation="-3.01991e-007 -5.3843e-006 3.01992e-007" Scale="1 1 1" Tag="" WorldPos="0.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="394" Name="streets_streets_pavement_2x8_40" Rotation="3.14159 6.75532e-007 3.14159" Scale="1 1 1" Tag="" WorldPos="6.5 0 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="395" Name="streets_streets_road_6x8_straight_17" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="0.5 0 -34" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="417" Name="buildings_streets_windows_plain_brick_white_10" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-13.5 0 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="418" Name="buildings_streets_windows_plain_brick_white_11" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 0 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="419" Name="buildings_streets_windows_plain_brick_white_12" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 0 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="420" Name="buildings_streets_windows_plain_brick_white_13" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="421" Name="buildings_streets_windows_plain_brick_white_14" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -24.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="422" Name="buildings_streets_windows_4m_white_11" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="423" Name="buildings_streets_windows_4m_white_12" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="424" Name="buildings_streets_windows_4m_white_13" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 -24.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="425" Name="buildings_streets_windows_plain_brick_white_15" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -28.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="426" Name="buildings_streets_windows_plain_white_10" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 -24.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="427" Name="buildings_streets_windows_plain_white_11" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="428" Name="buildings_streets_windows_4m_white_14" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 -24.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="429" Name="buildings_streets_windows_plain_white_12" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 -28.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="430" Name="buildings_streets_windows_4m_white_15" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 -36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="431" Name="buildings_streets_windows_plain_white_13" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 -36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="432" Name="buildings_streets_windows_4m_white_16" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 12 -32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="433" Name="buildings_streets_windows_4m_white_17" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 -32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="434" Name="buildings_streets_windows_4m_white_18" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 -28.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="435" Name="buildings_streets_windows_4m_white_19" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 8 -28.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="436" Name="buildings_streets_windows_plain_white_14" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 -32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="437" Name="buildings_streets_windows_plain_brick_white_16" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -32.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="438" Name="buildings_streets_windows_4m_white_20" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 4 -36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="439" Name="buildings_streets_windows_plain_white_15" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 12 -40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="440" Name="buildings_streets_windows_plain_white_16" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 12 -40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="441" Name="buildings_streets_windows_plain_white_17" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-5.5 8 -40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="442" Name="buildings_streets_windows_plain_white_18" Rotation="0 -2.14577e-006 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-1.5 8 -40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="444" Name="buildings_streets_windows_plain_brick_white_17" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="445" Name="buildings_streets_windows_plain_brick_white_18" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-1.5 0 -36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="446" Name="buildings_streets_windows_plain_white_19" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 4 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="447" Name="buildings_streets_windows_plain_white_20" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 8 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="448" Name="buildings_streets_windows_plain_white_21" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-5.5 12 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="449" Name="buildings_streets_windows_plain_white_22" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 8 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="450" Name="buildings_streets_windows_plain_white_23" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 12 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="451" Name="buildings_streets_windows_plain_white_24" Rotation="3.14159 -2.26498e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-9.5 4 -20.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="22" Group="0" ID="463" Name="buildings_streets_buildings_type3_groundfloor_door_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="22" Group="0" ID="464" Name="buildings_streets_buildings_type3_groundfloor_door_2" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 4" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="465" Name="buildings_streets_buildings_type3_window_large_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="469" Name="buildings_streets_windows_plain_dirty_48" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="470" Name="buildings_streets_windows_plain_dirty_49" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="471" Name="buildings_streets_windows_plain_dirty_50" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="472" Name="buildings_streets_windows_plain_dirty_51" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 0 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="474" Name="buildings_streets_windows_4m_dirty_broken_5" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 4 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="475" Name="buildings_streets_windows_4m_dirty_6" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 4 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="478" Name="buildings_streets_windows_4m_dirty_22" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 4 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="479" Name="buildings_streets_windows_4m_dirty_23" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 4 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="480" Name="buildings_streets_windows_4m_dirty_24" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 8 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="482" Name="buildings_streets_windows_4m_dirty_25" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 8 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="484" Name="buildings_streets_windows_4m_dirty_26" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 8 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="485" Name="buildings_streets_windows_4m_dirty_27" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 8 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="486" Name="buildings_streets_windows_4m_dirty_28" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 12 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="487" Name="buildings_streets_windows_4m_dirty_29" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 12 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="488" Name="buildings_streets_windows_4m_dirty_30" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 12 24" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="489" Name="buildings_streets_windows_4m_dirty_31" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 12 20" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="496" Name="buildings_streets_windows_4m_6" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 5.25 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="497" Name="buildings_streets_windows_plain_40" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 5.25 4" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="498" Name="buildings_streets_windows_4m_27" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="8.5 5.25 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="499" Name="buildings_streets_buildings_type3_window_large_2" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="12.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="500" Name="buildings_streets_buildings_type3_window_large_3" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="16.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="501" Name="buildings_streets_windows_4m_28" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="12.5 5.25 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="502" Name="buildings_streets_windows_plain_41" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="16.5 5.25 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="503" Name="buildings_streets_windows_4m_29" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="20.5 5.25 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="21" Group="0" ID="504" Name="buildings_streets_buildings_type3_window_large_4" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="20.5 0 0" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="505" Name="buildings_streets_windows_plain_dirty_53" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="12.5 8 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="506" Name="buildings_streets_windows_plain_dirty_54" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="12.5 12 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="507" Name="buildings_streets_windows_plain_dirty_55" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="16.5 8 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="508" Name="buildings_streets_windows_plain_dirty_56" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="16.5 12 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="509" Name="buildings_streets_windows_plain_dirty_57" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="20.5 8 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="510" Name="buildings_streets_windows_plain_dirty_58" Rotation="0 2.26498e-006 0" Scale="1 1 1" Tag="" WorldPos="20.5 12 12" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="511" Name="buildings_streets_windows_plain_dirty_52" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="512" Name="buildings_streets_windows_plain_dirty_59" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="513" Name="buildings_streets_windows_plain_dirty_60" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="514" Name="buildings_streets_windows_plain_dirty_61" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 12 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="515" Name="buildings_streets_windows_plain_dirty_62" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="516" Name="buildings_streets_windows_plain_dirty_63" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="517" Name="buildings_streets_windows_plain_dirty_64" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="518" Name="buildings_streets_windows_plain_dirty_65" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="523" Name="buildings_streets_windows_plain_white_25" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 12 52.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="524" Name="buildings_streets_windows_4m_white_21" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 12 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="525" Name="buildings_streets_windows_plain_white_26" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 12 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="526" Name="buildings_streets_windows_4m_white_22" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 12 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="527" Name="buildings_streets_windows_plain_white_27" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 12 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="528" Name="buildings_streets_windows_4m_white_23" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 8 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="529" Name="buildings_streets_windows_4m_white_24" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 8 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="530" Name="buildings_streets_windows_4m_white_25" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 8 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="531" Name="buildings_streets_windows_4m_white_26" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 8 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="532" Name="buildings_streets_windows_4m_white_27" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 8 52.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="533" Name="buildings_streets_windows_4m_white_28" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 4 52.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="534" Name="buildings_streets_windows_plain_white_28" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 4 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="535" Name="buildings_streets_windows_4m_white_29" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 4 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="536" Name="buildings_streets_windows_plain_white_29" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 4 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="537" Name="buildings_streets_windows_4m_white_30" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 4 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="538" Name="buildings_streets_windows_plain_brick_white_19" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 0 40.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="539" Name="buildings_streets_windows_plain_brick_white_20" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 0 44.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="540" Name="buildings_streets_windows_plain_brick_white_21" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 0 48.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="541" Name="buildings_streets_windows_plain_brick_white_22" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 0 52.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="17" Group="0" ID="542" Name="buildings_streets_windows_plain_brick_white_23" Rotation="0.0194847 1.5708 0.0194844" Scale="1 1 1" Tag="" WorldPos="13.25 0 56.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="543" Name="buildings_streets_windows_plain_white_30" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="13.25 8 56.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="544" Name="buildings_streets_windows_plain_white_31" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="13.25 12 56.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="545" Name="buildings_streets_windows_plain_white_32" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="17.25 12 56.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="546" Name="buildings_streets_windows_plain_white_33" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="17.25 8 56.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="547" Name="buildings_streets_windows_plain_white_34" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="17.25 8 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="548" Name="buildings_streets_windows_plain_white_35" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="21.25 8 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="549" Name="buildings_streets_windows_plain_white_36" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="21.25 12 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="550" Name="buildings_streets_windows_plain_white_37" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="17.25 12 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="23" Group="0" ID="558" Name="buildings_street_buildings_steps_small_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="15.25 0 30.75" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="559" Name="buildings_streets_windows_plain_white_38" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="17.25 0 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="562" Name="buildings_streets_windows_plain_white_41" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="17.25 4 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="563" Name="buildings_streets_windows_plain_dirty_66" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 12 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="564" Name="buildings_streets_windows_plain_dirty_67" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="565" Name="buildings_streets_windows_plain_dirty_68" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="566" Name="buildings_streets_windows_plain_dirty_69" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="567" Name="buildings_streets_windows_plain_dirty_70" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 12 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="568" Name="buildings_streets_windows_plain_dirty_71" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="569" Name="buildings_streets_windows_plain_dirty_72" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 4 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="570" Name="buildings_streets_windows_plain_dirty_73" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 0 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="24" Group="0" ID="574" Name="buildings_streets_windows_8m_1" Rotation="0 1.5708 0" Scale="1.25 1 1" Tag="" WorldPos="15.5 4.5 27" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="575" Name="buildings_streets_windows_plain_white_39" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="25.25 8 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="576" Name="buildings_streets_windows_plain_white_40" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="25.25 12 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="577" Name="buildings_streets_windows_4m_dirty_32" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="24.5 12 32" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="578" Name="buildings_streets_windows_4m_dirty_33" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="24.5 12 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="579" Name="buildings_streets_windows_4m_dirty_34" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="24.5 8 28" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="580" Name="buildings_streets_windows_4m_dirty_35" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="24.5 8 32" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="581" Name="buildings_streets_windows_plain_dirty_74" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 12 36" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="582" Name="buildings_streets_windows_plain_dirty_75" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 8 36" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="583" Name="buildings_streets_windows_plain_white_42" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="29.25 8 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="19" Group="0" ID="584" Name="buildings_streets_windows_plain_white_43" Rotation="-1.72999e-012 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="29.25 12 36.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="590" Name="buildings_streets_windows_plain_44" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="20.5 16 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="591" Name="buildings_streets_windows_4m_30" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="16.5 16 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="593" Name="buildings_streets_windows_plain_45" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="12.5 16 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="595" Name="buildings_streets_windows_plain_47" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="16.5 8 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="596" Name="buildings_streets_windows_plain_48" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="12.5 8 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="597" Name="buildings_streets_windows_plain_49" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="598" Name="buildings_streets_windows_4m_32" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="599" Name="buildings_streets_windows_plain_50" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 68" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="600" Name="buildings_streets_windows_plain_51" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 68" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="601" Name="buildings_streets_windows_plain_52" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="602" Name="buildings_streets_windows_plain_53" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="603" Name="buildings_streets_windows_plain_54" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 76" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="604" Name="buildings_streets_windows_4m_33" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 76" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="605" Name="buildings_streets_windows_4m_34" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 76" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="606" Name="buildings_streets_windows_4m_35" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="607" Name="buildings_streets_windows_4m_36" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 68" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="608" Name="buildings_streets_windows_4m_37" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="609" Name="buildings_streets_windows_4m_38" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="610" Name="buildings_streets_windows_plain_55" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 60" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="611" Name="buildings_streets_windows_4m_39" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 64" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="612" Name="buildings_streets_windows_4m_40" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 68" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="613" Name="buildings_streets_windows_4m_41" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="614" Name="buildings_streets_windows_plain_56" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 72" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="615" Name="buildings_streets_windows_4m_42" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 76" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="616" Name="buildings_streets_windows_4m_43" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 76" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="617" Name="buildings_streets_windows_4m_44" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 16 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="618" Name="buildings_streets_windows_plain_57" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 16 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="619" Name="buildings_streets_windows_4m_45" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 16 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="620" Name="buildings_streets_windows_plain_58" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 12 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="621" Name="buildings_streets_windows_4m_46" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 12 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="622" Name="buildings_streets_windows_plain_59" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 8 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="623" Name="buildings_streets_windows_4m_47" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 8 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="624" Name="buildings_streets_windows_plain_60" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 4 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="625" Name="buildings_streets_windows_plain_61" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 4 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="626" Name="buildings_streets_windows_plain_62" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="627" Name="buildings_streets_windows_plain_63" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="628" Name="buildings_streets_windows_plain_64" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="629" Name="buildings_streets_windows_plain_65" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 4 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="630" Name="buildings_streets_windows_plain_66" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 8 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="631" Name="buildings_streets_windows_plain_67" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 12 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="632" Name="buildings_streets_windows_4m_48" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="633" Name="buildings_streets_windows_plain_68" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 16 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="634" Name="buildings_streets_windows_plain_69" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 16 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="635" Name="buildings_streets_windows_4m_49" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="636" Name="buildings_streets_windows_plain_70" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 8 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="637" Name="buildings_streets_windows_plain_71" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="638" Name="buildings_streets_windows_plain_72" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 4 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="639" Name="buildings_streets_windows_plain_73" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="640" Name="buildings_streets_windows_plain_74" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 0 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="643" Name="buildings_streets_windows_plain_75" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 60" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="644" Name="buildings_streets_windows_4m_50" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 60" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="645" Name="buildings_streets_windows_4m_51" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 60" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="646" Name="buildings_streets_windows_4m_52" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 68" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="647" Name="buildings_streets_windows_4m_53" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 60" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="648" Name="buildings_streets_windows_plain_76" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="649" Name="buildings_streets_windows_4m_54" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="650" Name="buildings_streets_windows_4m_55" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="651" Name="buildings_streets_windows_4m_56" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="652" Name="buildings_streets_windows_4m_57" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="653" Name="buildings_streets_windows_plain_77" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="16.5 12 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="655" Name="buildings_streets_windows_plain_79" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="16.5 4 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="656" Name="buildings_streets_windows_plain_80" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="12.5 0 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="657" Name="buildings_streets_windows_plain_81" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="16.5 0 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="658" Name="buildings_streets_windows_4m_31" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="12.5 12 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="659" Name="buildings_streets_windows_4m_58" Rotation="6.35713e-008 6.70751e-006 -3.01992e-007" Scale="1 1 1" Tag="" WorldPos="12.5 4 56" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="660" Name="buildings_streets_windows_plain_78" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 12 80" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="674" Name="buildings_streets_windows_plain_86" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="675" Name="buildings_streets_windows_4m_61" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="676" Name="buildings_streets_windows_plain_87" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 -22" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="677" Name="buildings_streets_windows_plain_88" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 -22" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="678" Name="buildings_streets_windows_plain_89" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="679" Name="buildings_streets_windows_plain_90" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="680" Name="buildings_streets_windows_plain_91" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 0 -14" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="681" Name="buildings_streets_windows_4m_62" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 4 -14" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="682" Name="buildings_streets_windows_4m_63" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 -14" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="683" Name="buildings_streets_windows_4m_64" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="684" Name="buildings_streets_windows_4m_65" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 -22" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="685" Name="buildings_streets_windows_4m_66" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 8 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="686" Name="buildings_streets_windows_4m_67" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="687" Name="buildings_streets_windows_plain_92" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 -22" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="688" Name="buildings_streets_windows_4m_68" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 -26" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="689" Name="buildings_streets_windows_4m_69" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 -22" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="690" Name="buildings_streets_windows_4m_70" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="691" Name="buildings_streets_windows_plain_93" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 -18" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="692" Name="buildings_streets_windows_4m_71" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 12 -14" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="693" Name="buildings_streets_windows_4m_72" Rotation="-3.12172 1.5708 -3.12172" Scale="1 1 1" Tag="" WorldPos="8.5 16 -14" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="694" Name="buildings_streets_windows_4m_73" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 16 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="695" Name="buildings_streets_windows_plain_94" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 16 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="696" Name="buildings_streets_windows_4m_74" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 16 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="697" Name="buildings_streets_windows_plain_95" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 12 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="698" Name="buildings_streets_windows_4m_75" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 12 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="699" Name="buildings_streets_windows_plain_96" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 8 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="700" Name="buildings_streets_windows_4m_76" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 8 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="701" Name="buildings_streets_windows_plain_97" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 4 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="702" Name="buildings_streets_windows_plain_98" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 4 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="703" Name="buildings_streets_windows_plain_99" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="24.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="704" Name="buildings_streets_windows_plain_100" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="20.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="705" Name="buildings_streets_windows_plain_101" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="706" Name="buildings_streets_windows_plain_102" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 4 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="707" Name="buildings_streets_windows_plain_103" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 8 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="708" Name="buildings_streets_windows_plain_104" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 12 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="709" Name="buildings_streets_windows_4m_77" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="710" Name="buildings_streets_windows_plain_105" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 16 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="711" Name="buildings_streets_windows_plain_106" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 16 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="712" Name="buildings_streets_windows_4m_78" Rotation="-3.14159 -2.26696e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="713" Name="buildings_streets_windows_plain_107" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 8 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="714" Name="buildings_streets_windows_plain_108" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="715" Name="buildings_streets_windows_plain_109" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 4 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="716" Name="buildings_streets_windows_plain_110" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="717" Name="buildings_streets_windows_plain_111" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 0 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="13" Group="0" ID="719" Name="buildings_streets_windows_plain_112" Rotation="-3.14159 -2.29676e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 12 -10" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="720" Name="buildings_streets_windows_plain_dirty_76" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="721" Name="buildings_streets_windows_4m_dirty_broken_6" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="722" Name="buildings_streets_windows_4m_dirty_36" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="723" Name="buildings_streets_windows_4m_dirty_37" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="724" Name="buildings_streets_windows_4m_dirty_38" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 -30" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="725" Name="buildings_streets_windows_4m_dirty_39" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 -34" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="726" Name="buildings_streets_windows_4m_dirty_40" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 12 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="727" Name="buildings_streets_windows_4m_dirty_41" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="728" Name="buildings_streets_windows_4m_dirty_42" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 -34" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="729" Name="buildings_streets_windows_4m_dirty_43" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 8 -30" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="730" Name="buildings_streets_windows_4m_dirty_44" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 -30" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="731" Name="buildings_streets_windows_4m_dirty_45" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 -34" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="732" Name="buildings_streets_windows_4m_dirty_46" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 4 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="733" Name="buildings_streets_windows_plain_dirty_77" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 -38" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="734" Name="buildings_streets_windows_plain_dirty_78" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 -34" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="735" Name="buildings_streets_windows_plain_dirty_79" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="12.5 0 -30" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="737" Name="buildings_streets_windows_plain_dirty_80" Rotation="3.14159 2.14577e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 0 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="738" Name="buildings_streets_windows_4m_dirty_47" Rotation="-3.14159 2.32458e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 4 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="739" Name="buildings_streets_windows_4m_dirty_48" Rotation="-3.14159 2.32458e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 8 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="740" Name="buildings_streets_windows_4m_dirty_49" Rotation="-3.14159 2.32458e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 12 -42" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="741" Name="buildings_streets_windows_plain_dirty_81" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 0 -46" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="742" Name="buildings_streets_windows_4m_dirty_50" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 4 -46" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="743" Name="buildings_streets_windows_4m_dirty_51" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 8 -46" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="744" Name="buildings_streets_windows_4m_dirty_52" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="8.5 12 -46" />
+            </StaticObjects>
+            <Primitives>
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 2.475" Corner2UV="0 0" Corner3UV="2.925 0" Corner4UV="2.925 2.475" EndCorner="9.75 0 8.25" Group="0" ID="155" Material="G:/Gry/Amnesia - The Dark Descent/redist/static_objects/streets/buildings/streets_generic_buildings_brick_dirty.mat" Name="Plane" Rotation="1.57079 -4.44253e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.3 1 0.3" TileOffset="0 0 0" WorldPos="-1.5 0 53.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 2.475" Corner2UV="0 0" Corner3UV="2.925 0" Corner4UV="2.925 2.475" EndCorner="9.75 0 8.25" Group="0" ID="290" Material="G:/Gry/Amnesia - The Dark Descent/redist/static_objects/streets/buildings/streets_generic_buildings_brick_dirty.mat" Name="Plane_1" Rotation="-1.57079 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.3 1 0.3" TileOffset="0 0 0" WorldPos="-11.25 0 59" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="5.1 33.9" Corner2UV="5.1 16.8" Corner3UV="9.15 16.8" Corner4UV="9.15 33.9" EndCorner="6.75 0 28.5" Group="0" ID="586" Material="G:/Gry/Amnesia - The Dark Descent/redist/static_objects/factorybase/factory_facade_trim.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.6 1 0.6" TileOffset="0 0 0" WorldPos="8.5 0 28" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 2.25" Corner2UV="0 0" Corner3UV="8.125 0" Corner4UV="8.125 2.25" EndCorner="16.25 0 4.5" Group="0" ID="662" Material="G:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/alley_cobblestones.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-17.75 0 28" />
+            </Primitives>
+            <Decals />
+            <Entities>
+                <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="1 1 1 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="0" Name="BoxLight_1" Radius="1" Rotation="0 0 0" Scale="327.75 167.5 365.5" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="327.75 167.5 365.5" Tag="" WorldPos="0 0 0" />
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="452" Mesh="" Name="PlayerStartArea_1" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="3.25 0 26">
+                    <UserVariables />
+                </Area>
+                <Entity Active="true" FileIndex="0" Group="0" ID="663" Name="lantern_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="3.75 0 29">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="CustomSubItemTypeName" Value="" />
+                    </UserVariables>
+                </Entity>
+            </Entities>
+            <Misc>
+                <Compound Active="true" Group="0" ID="587" Name="Compound_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-9.5 8 40.5">
+                    <Component ID="232" />
+                    <Component ID="233" />
+                    <Component ID="234" />
+                    <Component ID="236" />
+                    <Component ID="235" />
+                    <Component ID="228" />
+                    <Component ID="227" />
+                    <Component ID="229" />
+                    <Component ID="226" />
+                    <Component ID="207" />
+                    <Component ID="210" />
+                    <Component ID="222" />
+                    <Component ID="208" />
+                    <Component ID="218" />
+                    <Component ID="163" />
+                    <Component ID="164" />
+                    <Component ID="214" />
+                    <Component ID="215" />
+                    <Component ID="219" />
+                    <Component ID="223" />
+                    <Component ID="211" />
+                    <Component ID="212" />
+                    <Component ID="224" />
+                    <Component ID="213" />
+                    <Component ID="225" />
+                    <Component ID="221" />
+                    <Component ID="220" />
+                    <Component ID="216" />
+                    <Component ID="217" />
+                    <Component ID="244" />
+                    <Component ID="260" />
+                    <Component ID="256" />
+                    <Component ID="259" />
+                    <Component ID="255" />
+                    <Component ID="258" />
+                    <Component ID="254" />
+                    <Component ID="257" />
+                    <Component ID="253" />
+                    <Component ID="261" />
+                    <Component ID="252" />
+                    <Component ID="247" />
+                    <Component ID="251" />
+                    <Component ID="250" />
+                    <Component ID="249" />
+                    <Component ID="242" />
+                    <Component ID="248" />
+                    <Component ID="240" />
+                    <Component ID="243" />
+                    <Component ID="239" />
+                    <Component ID="245" />
+                    <Component ID="238" />
+                    <Component ID="246" />
+                    <Component ID="237" />
+                </Compound>
+            </Misc>
+            <StaticObjectCombos />
+        </MapContents>
+    </MapData>
+</Level>

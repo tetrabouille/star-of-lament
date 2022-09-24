@@ -1,0 +1,77 @@
+void OnStart()
+{  
+}
+
+
+
+
+
+void OnEnter()
+{
+SetSanityDrainDisabled(true);
+AddEntityCollideCallback("Player", "change_music_1", "tension_1", false, 0);
+AddEntityCollideCallback("Player", "change_music_2", "tension_2", false, 0);
+AddEntityCollideCallback("Player", "change_music_3", "tension_0", false, 0);
+AddEntityCollideCallback("Player", "change_music_4", "tension_1", false, 0);
+AddEntityCollideCallback("Player", "change_music_5", "tension_0", false, 0);
+AddEntityCollideCallback("Player", "change_music_6", "tension_1", false, 0);
+AddEntityCollideCallback("Player", "change_music_7", "tension_1", false, 0);
+AddEntityCollideCallback("Player", "exit_to_house", "change_map_1", false, 0);
+AddEntityCollideCallback("Player", "exit_to_outside", "change_map_2", false, 0);
+AddUseItemCallback("", "basement_key", "basement_entrance", "basement_unlock", true);
+AddUseItemCallback("", "lock_pick_1", "bedroom_door", "bedroom_unlock", true);
+SetEntityPlayerInteractCallback("lock_pick_1", "event_1", true);
+SetEntityPlayerInteractCallback("note_1", "event_2", true);
+SetEntityPlayerInteractCallback("basement_key", "event_3", true);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-3_abandoned_house_inside", "abandoned_farm_inside_basement_exit", "", "");
+}
+
+void change_map_2(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-3_abandoned_house_outside", "abandoned_farm_inside_exit_2", "", "");
+}
+
+void tension_0(string &in asParent, string &in asChild, int alState) {
+	StopMusic(10, 1);
+}
+void tension_1(string &in asParent, string &in asChild, int alState) {
+	PlayMusic("abandoned_farm_1", true, 2, 6, 1, true);
+}
+void tension_2(string &in asParent, string &in asChild, int alState) {
+	PlayMusic("abandoned_farm_2", true, 2, 6, 1, true);
+}
+void basement_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("", "unlock_door.snt", "Player", 0.1f, false);
+	SetLevelDoorLocked("basement_entrance", false);
+	RemoveItem(asItem);
+}
+void bedroom_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("", "unlock_door.snt", "Player", 0.1f, false);
+	SetSwingDoorLocked("bedroom_door", false, true);
+	RemoveItem(asItem);
+}
+
+void event_1(string &in asEntity)
+{	SetLightVisible("omnious_guide_1", false);
+
+}
+
+void event_2(string &in asEntity)
+{	SetLightVisible("omnious_guide_2", false);
+
+}
+
+void event_3(string &in asEntity)
+{	SetLightVisible("omnious_guide_3", false);
+
+}

@@ -1,0 +1,26 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+	AddEntityCollideCallback("Player", "exit_to_matczyn", "change_map_1", false, 0);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+
+void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-2_matczyn", "forest_path_exit", "", "");
+}

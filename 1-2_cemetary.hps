@@ -1,0 +1,51 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+	AddUseItemCallback("string& asName", "jar_2", "lever_1", "lever_unstuck", true);
+	AddUseItemCallback("string& asName", "cemetary_key", "gate_2", "cemetary_unlock", true);
+	AddEntityCollideCallback("Player", "exit_to_matczyn", "change_map_1", false, 0);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+	void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-2_matczyn", "cemetary_exit", "", "");
+}
+
+
+    void lever_unstuck(string &in asItem, string &in asEntity) {
+	    RemoveItem(asItem);
+        SetLeverStuckState("lever_1", 0, false);
+    
+}
+
+    void gate_open_1(string &in asEntity, int LeverState) {
+	    if(LeverState == 1) {
+		
+		SetMoveObjectState("gate_1", 1);
+		SetLeverStuckState("lever__1", 1, true);
+		SetLightVisible("omnious_guide_1", false);
+		}
+		
+	}
+
+	void cemetary_unlock(string &in asItem, string &in asEntity) {
+		PlaySoundAtEntity("", "unlock_door.snt", "Player", 0.1f, false);
+		SetSwingDoorLocked("gate_2", false, true);
+		RemoveItem(asItem);
+
+}

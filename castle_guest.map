@@ -1,0 +1,41 @@
+<Level>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-1.13081 9.07946 -15.6851" CameraTarget="-11.9247 -0.912619 -12.4532" CameraZoom="1.2" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+        <Groups>
+            <Group ID="0" Name="None" Visible="true" />
+        </Groups>
+    </EditorSession>
+    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../">
+        <MapContents>
+            <FileIndex_StaticObjects NumOfFiles="1">
+                <File Id="0" Path="static_objects/castlebase/wall/door_frame.dae" />
+            </FileIndex_StaticObjects>
+            <FileIndex_Entities NumOfFiles="0" />
+            <FileIndex_Decals NumOfFiles="0" />
+            <StaticObjects>
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="2" Name="wall_door_frame_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-21 0 -12.75" />
+            </StaticObjects>
+            <Primitives>
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-12.45 -6.3" Corner2UV="-12.45 -9" Corner3UV="-4.95 -9" Corner4UV="-4.95 -6.3" EndCorner="12.5 0 4.5" Group="0" ID="1" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/floor/castlebase_tiledfloor02.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.6 1 0.6" TileOffset="0 0 0" WorldPos="-20.75 0 -15" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 1.8" Corner2UV="0 0" Corner3UV="5 0" Corner4UV="5 1.8" EndCorner="12.5 0 4.5" Group="0" ID="3" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_1" Rotation="-1.57079 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.4 1 0.4" TileOffset="0 0 0" WorldPos="-20.75 0 -10.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 1.8" Corner2UV="0 0" Corner3UV="0.4 0" Corner4UV="0.4 1.8" EndCorner="1 0 4.5" Group="0" ID="4" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_2" Rotation="-0.785398 -1.5708 -0.785398" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.4 1 0.4" TileOffset="0 0 0" WorldPos="-20.75 0 -11.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 1.8" Corner2UV="0 0" Corner3UV="0.4 0" Corner4UV="0.4 1.8" EndCorner="1 0 4.5" Group="0" ID="5" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_3" Rotation="-0.785398 -1.5708 -0.785398" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.4 1 0.4" TileOffset="0 0 0" WorldPos="-20.75 0 -15" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 0.4" Corner2UV="0 0" Corner3UV="1 0" Corner4UV="1 0.4" EndCorner="2.5 0 1" Group="0" ID="6" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_4" Rotation="-0.785398 -1.5708 -0.785398" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.4 1 0.4" TileOffset="0 0 0" WorldPos="-20.75 3.5 -14" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 1.8" Corner2UV="0 0" Corner3UV="5 0" Corner4UV="5 1.8" EndCorner="12.5 0 4.5" Group="0" ID="7" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_5" Rotation="1.57079 -4.44253e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.4 1 0.4" TileOffset="0 0 0" WorldPos="-8.25 0 -15" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-12.45 -9" Corner2UV="-12.45 -6.3" Corner3UV="-4.95 -6.3" Corner4UV="-4.95 -9" EndCorner="12.5 0 4.5" Group="0" ID="8" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/castlebase/ceiling/ceiling_rough.mat" Name="Plane_6" Rotation="-3.14159 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.6 1 0.6" TileOffset="0 0 0" WorldPos="-20.75 4.5 -10.5" />
+            </Primitives>
+            <Decals />
+            <Entities>
+                <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="1 1 1 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="0" Name="BoxLight_1" Radius="1" Rotation="0 -0 0" Scale="395.25 99.25 368.75" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="395.25 99.25 368.75" Tag="" WorldPos="0.25 0 0" />
+            </Entities>
+            <Misc />
+            <StaticObjectCombos />
+        </MapContents>
+    </MapData>
+</Level>

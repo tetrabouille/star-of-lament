@@ -1,0 +1,36 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+	AddEntityCollideCallback("Player", "exit_to_matczyn", "change_map_1", false, 0);
+	AddEntityCollideCallback("Player", "exit_to_abandoned_farm_outside", "change_map_2", false, 0);
+	AddUseItemCallback("unlock_factory", "factory_key", "factory_entrance", "factory_unlock", true);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-2_matczyn", "lake_side_exit", "", "");
+}
+void change_map_2(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-3_abandoned_house_outside", "lake_side_exit", "", "");
+}
+
+void factory_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("unlock_door", "unlock_door.snt", "Player", 0.1f, false);
+	SetLevelDoorLocked("factory_entrance", false);
+	RemoveItem(asItem);
+}

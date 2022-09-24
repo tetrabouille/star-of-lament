@@ -1,0 +1,29 @@
+void OnStart()
+{
+		AddEntityCollideCallback("Player", "LevelChange_Town", "LevelTransitTown", true, 1);
+		RotatePropToSpeed("turningGear", 100, 100, 0, 100, 0, false, "");
+}
+
+
+
+
+
+void OnEnter()
+{
+	PlayMusic("Harmony Forest", true, 0.5, 0.1, 10, false);
+}
+
+
+
+
+void OnLeave()
+{
+
+}
+
+
+
+void LevelTransitTown(string &in asParent, string &in asChild, int alState)
+{
+	ChangeMap("TVillage.map", "PlayerStartArea_1", "", "");
+}

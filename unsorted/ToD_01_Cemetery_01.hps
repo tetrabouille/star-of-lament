@@ -1,0 +1,28 @@
+void OnStart()
+{
+
+}
+
+
+
+
+
+void OnEnter()
+{
+		PlayMusic("Cemetery", true, 1, 0.1, 10, false);
+}
+
+
+
+
+void OnLeave()
+{
+
+}
+
+
+	void Lever(string &in asEntity, int LeverState)
+	{
+		if(LeverState == 1) SetMoveObjectState(asEntity, 1);
+
+	}

@@ -1,0 +1,147 @@
+void OnStart()
+{  
+}
+
+
+
+
+
+void OnEnter()
+{ 
+    PlayMusic("ToD_factory-4", true, 1, 0, 1, false);
+    AddEntityCollideCallback("Player", "trigger_event_1", "event_1", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_3", "event_3", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_4", "event_4", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_5", "event_5", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_6", "event_6", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_7", "event_7", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_8", "event_8", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_9", "event_9", false, 0);
+    AddEntityCollideCallback("Player", "trigger_event_10", "event_10", false, 0);
+
+    AddEntityCollideCallback("Player", "trigger_key_event_1", "key_event_1", false, 0);
+    SetEntityPlayerInteractCallback("matczyn_key", "event_2", true);
+    AddEntityCollideCallback("enemy_1", "enemy_gone", "bye", false, 0);
+    AddEntityCollideCallback("enemy_1", "trigger_monster_event_1", "monster_event_1", false, 0);
+    AddEntityCollideCallback("enemy_1", "trigger_monster_event_2", "monster_event_2", false, 0);
+    AddEntityCollideCallback("enemy_1", "trigger_monster_event_3", "monster_event_3", false, 0);
+    AddEntityCollideCallback("enemy_1", "trigger_monster_event_4", "monster_event_4", false, 0);
+    AddEntityCollideCallback("enemy_1", "trigger_monster_event_5", "monster_event_5", false, 0);
+}
+
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+// Music Triggers
+    void event_1(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-1", true, 1, 3, 1, false);
+}
+
+void event_2(string &in asEntity)
+{
+    PlaySoundAtEntity("", "ToD_important_item_pickup.snt", "Player", 0, false);
+}
+
+void event_3(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-2", true, 1, 3, 1, false);
+}
+
+void event_4(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-1", true, 1, 3, 1, false);
+}
+
+void event_5(string asParent, string asChild, int alState)
+{
+    StopMusic(5, 1);
+}
+
+void event_6(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-7", true, 1, 3, 1, false);
+}
+
+void event_7(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-4", true, 1, 6, 1, false);
+}
+
+void event_8(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-4", true, 1, 5, 1, false);
+}
+
+void event_9(string asParent, string asChild, int alState)
+{
+    StopMusic(5, 1);
+}
+
+void event_10(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-5", true, 1, 5, 1, false);
+}
+
+
+
+
+void key_event_1(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-5", true, 1, 5, 1, false);
+    SetEntityActive("enemy_1", true);
+    AddEnemyPatrolNode("enemy_1", "node_1", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_2", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_3", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_4", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_5", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_6", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_7", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_8", 0.001, "");
+    AddEnemyPatrolNode("enemy_1", "node_9", 0.001, "");
+}
+
+void bye(string asParent, string asChild, int alState)
+{
+    SetEntityActive("enemy_1", false);
+    StopMusic(5, 1);
+    
+}
+
+void monster_event_1(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-6", true, 1, 1, 1, false);
+}
+
+void monster_event_2(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-9", true, 1, 3, 1, false);
+}
+
+void monster_event_3(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-8", true, 1, 3, 1, false);
+}
+
+void monster_event_4(string asParent, string asChild, int alState)
+{
+    PlayMusic("ToD_factory-9", true, 1, 3, 1, false);
+}
+
+void monster_event_5(string asParent, string asChild, int alState)
+{
+    StopMusic(5, 1);
+}
+
+
+
+
+
+
+

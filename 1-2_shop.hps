@@ -1,0 +1,230 @@
+void OnStart()
+{
+	// TODO - Put this in intro map
+	SetGlobalVarInt("Coins", 0);
+
+	SetEntityPlayerInteractCallback("chest_small_1", "SetOmniousGuideOff", true);
+	SetEntityPlayerInteractCallback("factory_key", "PlayPickupSound", true);
+
+	SetEntityConnectionStateChangeCallback("shop1_slot1_btn", "HandleShop1Button1");
+	SetEntityConnectionStateChangeCallback("shop1_slot2_btn", "HandleShop1Button2");
+	SetEntityConnectionStateChangeCallback("shop1_slot3_btn", "HandleShop1Button3");
+	SetEntityConnectionStateChangeCallback("shop1_slot4_btn", "HandleShop1Button4");
+
+	// SetEntityConnectionStateChangeCallback("shop2_btn_item_1", "HandleShop2Button1");
+	// SetEntityConnectionStateChangeCallback("shop2_btn_item_2", "HandleShop2Button2");
+	// SetEntityConnectionStateChangeCallback("shop2_btn_item_3", "HandleShop2Button3");
+	// SetEntityConnectionStateChangeCallback("shop2_btn_item_4", "HandleShop2Button4");
+
+	ConnectAllCoins("1");
+}
+
+void OnEnter()
+{ 
+	RefreshAllButtons();
+}
+
+void OnLeave()
+{ 
+	
+}
+
+// CONSTANTS
+
+string COINS_SMALL = "coins_small_";
+string COINS_MEDIUM = "coins_medium_";
+string COINS_LARGE = "coins_large_";
+string COINS_ITEM_FILE = "coin.ent";
+
+// FUNCTIONS
+
+void PrintMsg(string msg){
+	AddDebugMessage(msg, false);
+}
+
+void HandleShop1Button1(string &in asEntity, int alState){
+	HandleShopButton('shop1_slot1_item_');
+}
+
+void HandleShop1Button2(string &in asEntity, int alState){
+	HandleShopButton('shop1_slot2_item_');
+}
+
+void HandleShop1Button3(string &in asEntity, int alState){
+	HandleShopButton('shop1_slot3_item_');
+}
+
+void HandleShop1Button4(string &in asEntity, int alState){
+	HandleShopButton('shop1_slot4_item_');
+}
+
+void HandleShopButton(string itemSlot) {
+	if (!SHOP_BUTTONS_ACTIVE) return;
+	string item = itemSlot + GetItemStock(itemSlot);
+
+	if (CanPlayerBuyItem(itemSlot)){
+		SetEntityActive(item, false);
+		SetShopStock(item, 1);
+		RefreshAllButtons();
+	}
+}
+
+int SHOP1_SLOT1_CART = 0;
+int SHOP1_SLOT2_CART = 0;
+int SHOP1_SLOT3_CART = 0;
+int SHOP1_SLOT4_CART = 0;
+
+// TODO - make this global vars
+int SHOP1_SLOT1_STOCK = 5;
+int SHOP1_SLOT2_STOCK = 3;
+int SHOP1_SLOT3_STOCK = 2;
+int SHOP1_SLOT4_STOCK = 1;
+
+int GetItemPrice(string item){
+	if (StringContains(item, "shop1_slot1")) return 1;
+	if (StringContains(item, "shop1_slot2")) return 2;
+	if (StringContains(item, "shop1_slot3")) return 2;
+  if (StringContains(item, "shop1_slot4")) return 5;
+	return 0;
+}
+
+int GetItemCart(string item){
+	if (StringContains(item, "shop1_slot1")) return SHOP1_SLOT1_CART;
+	if (StringContains(item, "shop1_slot2")) return SHOP1_SLOT2_CART;
+	if (StringContains(item, "shop1_slot3")) return SHOP1_SLOT3_CART;
+  if (StringContains(item, "shop1_slot4")) return SHOP1_SLOT4_CART;
+	return 0;
+}
+
+int GetItemStock(string item){
+	if (StringContains(item, "shop1_slot1")) return SHOP1_SLOT1_STOCK;
+	if (StringContains(item, "shop1_slot2")) return SHOP1_SLOT2_STOCK;
+	if (StringContains(item, "shop1_slot3")) return SHOP1_SLOT3_STOCK;
+  if (StringContains(item, "shop1_slot4")) return SHOP1_SLOT4_STOCK;
+	return 0;
+}
+
+int GetShopCartPrice(string shop){
+	int totalPrice = 0;
+	if (StringContains(shop, "shop1")) {
+		totalPrice += GetCartPrice('shop1_slot1');
+		totalPrice += GetCartPrice('shop1_slot2');
+		totalPrice += GetCartPrice('shop1_slot3');
+		totalPrice += GetCartPrice('shop1_slot4');
+	}
+	// second shop
+	return totalPrice;
+}
+
+int GetCartPrice(string item) {
+	int price = GetItemPrice(item);
+	int cart = GetItemCart(item);
+	return price * cart;
+}
+
+void SetShopStock(string item, int quantity){
+	if (StringContains(item, "shop1_slot1")) {
+		SHOP1_SLOT1_STOCK -= quantity;
+		SHOP1_SLOT1_CART += quantity;
+	}
+	if (StringContains(item, "shop1_slot2")) {
+		SHOP1_SLOT2_STOCK -= quantity;
+		SHOP1_SLOT2_CART += quantity;
+	}
+	if (StringContains(item, "shop1_slot3")) {
+		SHOP1_SLOT3_STOCK -= quantity;
+		SHOP1_SLOT3_CART += quantity;
+	}
+  if (StringContains(item, "shop1_slot4")) {
+		SHOP1_SLOT4_STOCK -= quantity;
+		SHOP1_SLOT4_CART += quantity;
+	}
+}
+
+bool SHOP_BUTTONS_ACTIVE = true;
+void RefreshAllButtons() {
+	SHOP_BUTTONS_ACTIVE = false;
+	RefreshButton('shop1_slot1_btn');
+	RefreshButton('shop1_slot2_btn');
+	RefreshButton('shop1_slot3_btn');
+	RefreshButton('shop1_slot4_btn');
+	SHOP_BUTTONS_ACTIVE = true;
+}
+
+void RefreshButton(string btnName){
+	if (CanPlayerBuyItem(btnName)) SetButtonSwitchedOn(btnName, true, false);
+	else SetButtonSwitchedOn(btnName, false, false);
+}
+
+bool CanPlayerBuyItem(string item){
+	int price = GetItemPrice(item);
+	int stock = GetItemStock(item);
+	if (price == 0) return false;
+
+	int cartPrice = GetShopCartPrice(item);
+
+	if(cartPrice + price <= GetGlobalVarInt("Coins")){
+		if(stock > 0) return true;
+		// No more stock
+		return false;
+	}
+	// Too expensive
+	return false;
+}
+
+void ConnectAllCoins(string num){
+	string small = COINS_SMALL + num;
+	string medium = COINS_MEDIUM + num;
+	string large = COINS_LARGE + num;
+	string inc = StringToInt(num) + 1;
+	bool connectNextCoins = false;
+	if(GetEntityExists(small)){
+		SetEntityCallbackFunc(small, "GiveMoney");
+		connectNextCoins = true;
+	}
+	if(GetEntityExists(medium)){
+		SetEntityCallbackFunc(medium, "GiveMoney");
+		connectNextCoins = true;
+	}
+	if(GetEntityExists(large)){
+		SetEntityCallbackFunc(large, "GiveMoney");
+		connectNextCoins = true;
+	}
+	if(connectNextCoins) ConnectAllCoins(inc);
+}
+
+void GiveMoney(string &in asEntity, string &in type){
+	bool refreshButtons = false;
+	if(StringContains(asEntity, "small")){
+		GiveItemFromFile(COINS_SMALL, COINS_ITEM_FILE);
+		AddGlobalVarInt("Coins", 1);
+		refreshButtons = true;
+	}
+	else if(StringContains(asEntity, "medium")){
+		AddGlobalVarInt("Coins", 2);
+		for(int i = 0; i < 2; i++) {
+			GiveItemFromFile(COINS_MEDIUM, COINS_ITEM_FILE);
+		}
+		refreshButtons = true;
+	}
+	else if(StringContains(asEntity, "large")){
+		AddGlobalVarInt("Coins", 5);
+		for(int i = 0; i < 5; i++) {
+			GiveItemFromFile(COINS_LARGE, COINS_ITEM_FILE);
+		}
+		refreshButtons = true;
+	}
+	if (refreshButtons) RefreshAllButtons();
+}
+
+void SetOmniousGuideOff(string &in asEntity)
+{
+	SetLightVisible("omnious_guide_1", false);
+}
+
+void PlayPickupSound(string &in asEntity)
+{
+	PlaySoundAtEntity("", "ToD_important_item_pickup.snt", "Player", 0, false);
+}
+
+

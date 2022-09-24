@@ -1,0 +1,79 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 	
+	PlayMusic("matczynday", true, 2, 0, 1, true);
+	AddEntityCollideCallback("Player", "exit_to_lake_side", "change_map_1", false, 0);
+	AddEntityCollideCallback("Player", "exit_to_farm", "change_map_2", false, 0);
+	AddEntityCollideCallback("Player", "exit_to_fog_woods", "change_map_3", false, 0);
+	AddEntityCollideCallback("Player", "exit_to_cemetary", "change_map_4", false, 0);
+	AddEntityCollideCallback("Player", "exit_to_forest_path", "change_map_5", false, 0);
+	AddUseItemCallback("", "matczyn_key", "matczyn_gate", "matczyn_unlock", true);
+	AddUseItemCallback("", "matczynexit_key", "matczynexit_gate", "matczynexit_unlock", true);
+	AddUseItemCallback("", "saw", "boards_1", "saw_unlock_1", true);
+	AddUseItemCallback("", "saw", "boards_2", "saw_unlock_2", true);
+}
+
+
+
+
+void OnLeave()
+{ 
+
+}
+
+void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-3_lake_side", "matczyn_exit", "", "");
+}
+void change_map_2(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-2_abandoned_farm", "matczyn_exit", "", "");
+}
+void change_map_3(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("", "matczyn_exit", "", "");
+}
+void change_map_4(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-2_cemetary", "matczyn_exit", "", "");
+}
+
+void change_map_5(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-4_forest_path", "matczyn_exit", "", "");
+}
+
+void matczyn_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("unlock_door", "unlock_door.snt", "Player", 0.1f, false);
+	PlaySoundAtEntity("", "ToD_quest_complete.snt", "Player", 0, false);
+	SetSwingDoorLocked("matczyn_gate", false, true);
+	RemoveItem(asItem);
+
+}
+
+void matczynexit_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("unlock_door", "unlock_door.snt", "Player", 0.1f, false);
+	PlaySoundAtEntity("", "ToD_quest_complete.snt", "Player", 0, false);
+	SetSwingDoorLocked("matczynexit_gate", false, true);
+	RemoveItem(asItem);
+
+}
+
+void saw_unlock_1(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("", "26_saw.snt", "boards_1", 0.1f, false);
+	SetLevelDoorLocked("soltis_entrance", false);
+	SetEntityActive("boards_1", false);
+	SetEntityActive("boards_1_broken", true);
+
+}
+
+void saw_unlock_2(string &in asItem, string &in asEntity) {
+		PlaySoundAtEntity("", "26_saw.snt", "boards_2", 0.1f, false);
+		SetLevelDoorLocked("village_house_entrance", false);
+		SetEntityActive("boards_2", false);
+		SetEntityActive("boards_2_broken", true);
+
+}

@@ -1,0 +1,34 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+	AddEntityCollideCallback("Player", "exit_to_matczyn", "change_map_1", false, 0);
+	AddUseItemCallback("", "saw", "boards_1", "house_unlock", true);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+void change_map_1(string &in asParent, string &in asChild, int alState) {
+	ChangeMap("1-2_matczyn", "farm_exit", "", "");
+}
+
+void house_unlock(string &in asItem, string &in asEntity) {
+	PlaySoundAtEntity("", "26_saw.snt", "boards_1", 0.1f, false);
+	SetSwingDoorLocked("house_door", false, true);
+	SetEntityActive("boards_1", false);
+	SetEntityActive("boards_1_broken", true);
+
+}

@@ -1,0 +1,59 @@
+<AINodes>
+    <Node Name="corenode1_1" ID="1749">
+        <Edge Node="corenode1_2" Distance="4.52769279479980470000" />
+    </Node>
+    <Node Name="corenode1_2" ID="1814">
+        <Edge Node="corenode1_1" Distance="4.52769279479980470000" />
+        <Edge Node="corenode1_3" Distance="7.25430917739868160000" />
+    </Node>
+    <Node Name="corenode1_3" ID="1815">
+        <Edge Node="interCorenode12_1" Distance="1.00000000000000000000" />
+        <Edge Node="corenode1_4" Distance="1.76776695251464840000" />
+    </Node>
+    <Node Name="corenode1_4" ID="1816">
+        <Edge Node="corenode1_3" Distance="1.76776695251464840000" />
+        <Edge Node="interCorenode12_1" Distance="1.90394330024719240000" />
+    </Node>
+    <Node Name="interCorenode12_1" ID="1817">
+        <Edge Node="corenode1_3" Distance="1.00000000000000000000" />
+        <Edge Node="corenode1_4" Distance="1.90394330024719240000" />
+        <Edge Node="interCorenode12_2" Distance="4.50000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_2" ID="1818">
+        <Edge Node="interCorenode12_1" Distance="4.50000000000000000000" />
+        <Edge Node="corenode1_3" Distance="5.50000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_3" ID="1819">
+        <Edge Node="interCorenode12_2" Distance="5.75000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_4" ID="1820">
+        <Edge Node="interCorenode12_5" Distance="4.50000000000000000000" />
+        <Edge Node="interCorenode12_6" Distance="7.75000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_5" ID="1821">
+        <Edge Node="interCorenode12_4" Distance="4.50000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_6" ID="1822">
+        <Edge Node="interCorenode12_4" Distance="7.75000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_7" ID="1823">
+        <Edge Node="interCorenode12_8" Distance="7.75000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_8" ID="1824">
+        <Edge Node="interCorenode12_7" Distance="7.75000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_9" ID="1825">
+        <Edge Node="interCorenode12_10" Distance="8.50000000000000000000" />
+        <Edge Node="interCorenode12_2" Distance="8.75000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_10" ID="1826">
+        <Edge Node="interCorenode12_11" Distance="4.50000000000000000000" />
+        <Edge Node="interCorenode12_9" Distance="8.50000000000000000000" />
+    </Node>
+    <Node Name="interCorenode12_11" ID="1827">
+        <Edge Node="interCorenode12_10" Distance="4.50000000000000000000" />
+    </Node>
+    <Node Name="dog_actor_node_1" ID="1869" />
+    <Node Name="dog_actor_node_2" ID="1880" />
+    <Node Name="scene_node_1-1" ID="1898" />
+</AINodes>

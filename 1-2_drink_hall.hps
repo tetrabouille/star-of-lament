@@ -1,0 +1,27 @@
+void OnStart()
+{  
+
+}
+
+
+
+
+
+void OnEnter()
+{ 
+    AddUseItemCallback("", "jar_1", "oil_barrel", "jar_oil", true);
+}  
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+void jar_oil(string &in asItem, string &in asEntity) {
+	 RemoveItem("jar_1");
+     SetLightVisible("omnious_guide_1", false);
+     SetEntityActive("jar_2", true);
+}

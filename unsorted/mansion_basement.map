@@ -1,0 +1,249 @@
+<Level>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="7.92677 4.75672 -13.1436" CameraTarget="9.88151 -0.364183 -8.78857" CameraZoom="1.966" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+        <Groups>
+            <Group ID="0" Name="None" Visible="true" />
+        </Groups>
+    </EditorSession>
+    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../">
+        <MapContents>
+            <FileIndex_StaticObjects NumOfFiles="4">
+                <File Id="0" Path="static_objects/mansionbase/wall/wood_panneling_door_frame_02.DAE" />
+                <File Id="1" Path="static_objects/cellarbase/wall/factory_door_doorway.dae" />
+                <File Id="2" Path="static_objects/castlebase/wall/prisonbars_door_way.dae" />
+                <File Id="3" Path="static_objects/castlebase/wall/prisonbars.dae" />
+            </FileIndex_StaticObjects>
+            <FileIndex_Entities NumOfFiles="4">
+                <File Id="0" Path="entities/door/mansion_wood_panneling_door/level_wood_panneling_door.ent" />
+                <File Id="1" Path="entities/door/factory_corridor_01_door/factory_corridor_01_door.ent" />
+                <File Id="2" Path="entities/door/prison_section/prison_section_plain_static.ent" />
+                <File Id="3" Path="entities/organic/corpse_male/male_corpse.ent" />
+            </FileIndex_Entities>
+            <FileIndex_Decals NumOfFiles="0" />
+            <StaticObjects>
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="7" Name="wall_wood_panneling_door_frame_3" Rotation="3.14159 -8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-14 0 -1.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="25" Name="wall_factory_door_doorway_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-1 0 -1.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="44" Name="wall_prisonbars_door_way_1" Rotation="0 1.74846e-007 0" Scale="1 1 1" Tag="" WorldPos="9.75 0 -10.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="45" Name="wall_prisonbars_1" Rotation="0 1.74846e-007 0" Scale="1 1 1" Tag="" WorldPos="6.75 0 -10.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="52" Name="wall_prisonbars_2" Rotation="-3.14159 -4.61738e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="4.25 0 -13.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="53" Name="wall_prisonbars_door_way_2" Rotation="-3.14159 -4.61738e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="1.25 0 -13.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="61" Name="wall_prisonbars_3" Rotation="-3.14159 -4.61738e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="16.5 0 -13.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="62" Name="wall_prisonbars_door_way_3" Rotation="-3.14159 -4.61738e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="13.5 0 -13.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="68" Name="wall_factory_door_doorway_2" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="20 0 -12" />
+            </StaticObjects>
+            <Primitives>
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-7 -0.125" Corner2UV="-7 -1.375" Corner3UV="-1.75 -1.375" Corner4UV="-1.75 -0.125" EndCorner="10.5 0 2.5" Group="0" ID="3" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-14 0 -2.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.1 -9.17939e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.1 0.75" EndCorner="3.75 0 10.5" Group="0" ID="13" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane" Rotation="1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-14 0 -2.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.05 -2.18557e-009" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.05 0.75" EndCorner="3.75 0 0.25" Group="0" ID="15" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_1" Rotation="3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-14 0 -0.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.4 -0.5" Corner2UV="0 -0.5" Corner3UV="-8.74227e-009 -0.3" Corner4UV="-0.4 -0.3" EndCorner="1 0 2" Group="0" ID="16" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_2" Rotation="3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 -0.5" WorldPos="-14 2.75 -0.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.05 -2.18557e-009" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.05 0.75" EndCorner="3.75 0 0.25" Group="0" ID="17" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_3" Rotation="3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-14 0 -2.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.1 -9.17939e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.1 0.75" EndCorner="3.75 0 10.5" Group="0" ID="18" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_4" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-3.5 0 -0.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.1 -9.17939e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.1 0.75" EndCorner="3.75 0 10.5" Group="0" ID="19" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_5" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-3.5 0 10.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.1 -9.17939e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.1 0.75" EndCorner="3.75 0 10.5" Group="0" ID="20" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_6" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="7 0 10.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-0.5 5.125" Corner2UV="-1.75 5.125" Corner3UV="-1.75 -6.625" Corner4UV="-0.5 -6.625" EndCorner="23.5 0 2.5" Group="0" ID="21" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_7" Rotation="0 1.5708 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-3.5 0 10.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.1 -9.17939e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.1 0.75" EndCorner="3.75 0 10.5" Group="0" ID="22" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_8" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-3.5 0 -2.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.65 -2.84124e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.65 0.75" EndCorner="3.75 0 3.25" Group="0" ID="23" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_9" Rotation="1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-3.5 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-0.499997 -5.375" Corner2UV="-0.5 -6.625" Corner3UV="10 -6.62502" Corner4UV="10 -5.37502" EndCorner="21 0 2.5" Group="0" ID="24" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_10" Rotation="0 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-1 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.65 -7.21238e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.65 0.75" EndCorner="3.75 0 8.25" Group="0" ID="26" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_11" Rotation="0 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 0 -0.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.4 -1.74845e-008" Corner2UV="0 0" Corner3UV="-2.18557e-009 0.05" Corner4UV="-0.4 0.05" EndCorner="0.25 0 2" Group="0" ID="27" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_12" Rotation="0 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 3.5 -2.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.65 -7.21238e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.65 0.75" EndCorner="3.75 0 8.25" Group="0" ID="28" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_13" Rotation="0 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 0 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-0.499997 5.125" Corner2UV="-0.5 3.875" Corner3UV="3.5 3.87499" Corner4UV="3.5 5.12499" EndCorner="8 0 2.5" Group="0" ID="29" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_14" Rotation="0 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-1 0 7.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.75 -7.64949e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.75 0.75" EndCorner="3.75 0 8.75" Group="0" ID="30" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_15" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 0 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.4 -1.74845e-008" Corner2UV="0 0" Corner3UV="-2.18557e-009 0.05" Corner4UV="-0.4 0.05" EndCorner="0.25 0 2" Group="0" ID="31" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_16" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 3.5 -0.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.45 -1.96701e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.45 0.75" EndCorner="3.75 0 2.25" Group="0" ID="32" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_17" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 0 -2.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.2 0.75" EndCorner="3.75 0 6" Group="0" ID="33" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_18" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 0 5.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.55 -6.77526e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.55 0.75" EndCorner="3.75 0 7.75" Group="0" ID="34" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_19" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="6.75 0 5.5" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.55 -6.77526e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.55 0.75" EndCorner="3.75 0 7.75" Group="0" ID="35" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_20" Rotation="1.5708 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-1 0 -4.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.05 -8.96083e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.05 0.75" EndCorner="3.75 0 10.25" Group="0" ID="36" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_21" Rotation="9.08971e-006 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="6.75 0 -4.75" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-0.499988 2.75" Corner2UV="-0.5 -2.375" Corner3UV="3.375 -2.37501" Corner4UV="3.37501 2.74999" EndCorner="7.75 0 10.25" Group="0" ID="37" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_22" Rotation="0 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-1 0 -4.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.25 -5.46392e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.25 0.75" EndCorner="3.75 0 6.25" Group="0" ID="39" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_23" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="5.25 0 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.75 -3.27835e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-0.75 0.65" EndCorner="3.25 0 3.75" Group="0" ID="40" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_24" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="5.25 0 -7" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.75 -3.27835e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-0.75 0.65" EndCorner="3.25 0 3.75" Group="0" ID="41" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_25" Rotation="0 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="11.25 0 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-1.2 0.65" EndCorner="3.25 0 6" Group="0" ID="42" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_26" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="11.25 0 -7" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="2.625 -3.5" Corner2UV="2.625 -5.375" Corner3UV="5.625 -5.37501" Corner4UV="5.625 -3.50001" EndCorner="6 0 3.75" Group="0" ID="43" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_27" Rotation="0 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.25 0 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="2.625 -5.375" Corner2UV="2.625 -3.5" Corner3UV="5.625 -3.50001" Corner4UV="5.62499 -5.37501" EndCorner="6 0 3.75" Group="0" ID="46" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_28" Rotation="-3.14159 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.25 3.25 -7" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-4.37114e-009 0.1" Corner4UV="-1.2 0.0999999" EndCorner="0.5 0 6" Group="0" ID="47" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_29" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="11.25 3.25 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="2.87499 -8.5" Corner2UV="2.875 -6.625" Corner3UV="-0.125 -6.62498" Corner4UV="-0.125013 -8.49998" EndCorner="6 0 3.75" Group="0" ID="48" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_30" Rotation="-3.14159 -6.76711e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.75 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.75 -3.27835e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-0.75 0.65" EndCorner="3.25 0 3.75" Group="0" ID="49" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_31" Rotation="-3.14159 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-0.25 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-1.2 0.65" EndCorner="3.25 0 6" Group="0" ID="50" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_32" Rotation="1.5708 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-0.25 0 -17" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.75 -3.27835e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-0.75 0.65" EndCorner="3.25 0 3.75" Group="0" ID="51" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_33" Rotation="8.88506e-006 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="5.75 0 -17" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-4.37114e-009 0.1" Corner4UV="-1.2 0.0999999" EndCorner="0.5 0 6" Group="0" ID="54" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_34" Rotation="1.5708 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="-0.25 3.25 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="2.87501 -6.625" Corner2UV="2.875 -8.5" Corner3UV="-0.125 -8.49998" Corner4UV="-0.124987 -6.62498" EndCorner="6 0 3.75" Group="0" ID="55" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_35" Rotation="4.52995e-006 -6.76711e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="5.75 3.25 -17" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="8.99999 -8.5" Corner2UV="9 -6.625" Corner3UV="6 -6.62498" Corner4UV="5.99999 -8.49998" EndCorner="6 0 3.75" Group="0" ID="57" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_36" Rotation="-3.14159 -6.76711e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="18 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.75 -3.27835e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-0.75 0.65" EndCorner="3.25 0 3.75" Group="0" ID="58" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_37" Rotation="-3.14159 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="12 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-1.2 0.65" EndCorner="3.25 0 6" Group="0" ID="59" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_38" Rotation="1.5708 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="12 0 -17" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.75 -3.27835e-008" Corner2UV="0 0" Corner3UV="-2.84124e-008 0.65" Corner4UV="-0.75 0.65" EndCorner="3.25 0 3.75" Group="0" ID="60" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_39" Rotation="8.88506e-006 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="18 0 -17" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.2 -5.24536e-008" Corner2UV="0 0" Corner3UV="-4.37114e-009 0.1" Corner4UV="-1.2 0.0999999" EndCorner="0.5 0 6" Group="0" ID="63" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_40" Rotation="1.5708 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="12 3.25 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="9.00001 -6.625" Corner2UV="9 -8.5" Corner3UV="6 -8.49998" Corner4UV="6.00001 -6.62498" EndCorner="6 0 3.75" Group="0" ID="64" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_41" Rotation="4.52995e-006 -6.76711e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="18 3.25 -17" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.25 -5.46392e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.25 0.75" EndCorner="3.75 0 6.25" Group="0" ID="65" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_42" Rotation="1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="5.75 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.4 -1.74845e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.4 0.75" EndCorner="3.75 0 2" Group="0" ID="66" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_43" Rotation="1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="18 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.4 -1.74845e-008" Corner2UV="0 0" Corner3UV="-2.18557e-009 0.05" Corner4UV="-0.4 0.05" EndCorner="0.25 0 2" Group="0" ID="67" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_44" Rotation="0 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 3.5 -13" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.05 -2.18557e-009" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.05 0.75" EndCorner="3.75 0 0.25" Group="0" ID="69" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_45" Rotation="8.88506e-006 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 0 -13.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.05 -2.18557e-009" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.05 0.75" EndCorner="3.75 0 0.25" Group="0" ID="70" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_46" Rotation="8.88506e-006 5.78824e-013 1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 0 -11" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.4 -1.74845e-008" Corner2UV="0 0" Corner3UV="-2.18557e-009 0.05" Corner4UV="-0.4 0.05" EndCorner="0.25 0 2" Group="0" ID="71" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_47" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 3.5 -11" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.4 -6.11959e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.4 0.75" EndCorner="3.75 0 7" Group="0" ID="73" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_48" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 0 -4" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-0.65 -2.84124e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-0.65 0.75" EndCorner="3.75 0 3.25" Group="0" ID="74" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_49" Rotation="-3.14159 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 0 -13" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.35 -5.90104e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.35 0.75" EndCorner="3.75 0 6.75" Group="0" ID="75" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_50" Rotation="1.5708 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="20 0 -16.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-2.45 -1.07093e-007" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-2.45 0.75" EndCorner="3.75 0 12.25" Group="0" ID="76" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_51" Rotation="9.05991e-006 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="26.75 0 -16.25" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="-1.35 -5.90104e-008" Corner2UV="0 0" Corner3UV="-3.27835e-008 0.75" Corner4UV="-1.35 0.75" EndCorner="3.75 0 6.75" Group="0" ID="77" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/pubwall02.mat" Name="Plane_52" Rotation="-1.57079 8.74325e-008 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-1.5708" TileAmount="0.2 1 0.2" TileOffset="0 0 0" WorldPos="26.75 0 -4" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="10 -2" Corner2UV="10 -8.125" Corner3UV="13.375 -8.12501" Corner4UV="13.375 -2.00001" EndCorner="6.75 0 12.25" Group="0" ID="78" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_53" Rotation="0 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="20 0 -16.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-0.500003 -6.625" Corner2UV="-0.5 -5.375" Corner3UV="10 -5.37502" Corner4UV="10 -6.62502" EndCorner="21 0 2.5" Group="0" ID="79" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_54" Rotation="-3.14159 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-1 3.75 -10.75" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-1.75 5.125" Corner2UV="-0.5 5.125" Corner3UV="-0.499999 -6.625" Corner4UV="-1.75 -6.625" EndCorner="23.5 0 2.5" Group="0" ID="80" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_55" Rotation="4.44253e-006 1.5708 3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-1 3.75 10.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-0.500003 3.875" Corner2UV="-0.5 5.125" Corner3UV="3.5 5.12499" Corner4UV="3.5 3.87499" EndCorner="8 0 2.5" Group="0" ID="81" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_56" Rotation="3.14159 2.32458e-006 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-1 3.75 10.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="3.37501 2.75" Corner2UV="3.375 -2.375" Corner3UV="-0.5 -2.37499" Corner4UV="-0.499988 2.75001" EndCorner="7.75 0 10.25" Group="0" ID="82" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_57" Rotation="-1.0327e-011 -2.32458e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="6.75 3.75 -4.75" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="13.375 -2" Corner2UV="13.375 -8.125" Corner3UV="10 -8.12499" Corner4UV="10 -1.99999" EndCorner="6.75 0 12.25" Group="0" ID="83" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_58" Rotation="-1.0327e-011 -2.32458e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="26.75 3.75 -16.25" />
+                <Plane Active="true" AlignToWorldCoords="true" CastShadows="false" Collides="true" Corner1UV="-7 -1.375" Corner2UV="-7 -0.125" Corner3UV="-1.75 -0.125" Corner4UV="-1.75 -1.375" EndCorner="10.5 0 2.5" Group="0" ID="84" Material="F:/Gry/Amnesia - The Dark Descent/redist/static_objects/cellarbase/floor/cellarbase_wood_floor.mat" Name="Plane_59" Rotation="3.14159 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-14 3.75 -0.25" />
+            </Primitives>
+            <Decals />
+            <Entities>
+                <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="1 1 1 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="0" Name="BoxLight_1" Radius="1" Rotation="0 -0 0" Scale="395.25 99.25 368.75" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="395.25 99.25 368.75" Tag="" WorldPos="0.25 0 0" />
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="5" Mesh="" Name="PlayerStartArea_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-12.25 0.25 -1.5">
+                    <UserVariables />
+                </Area>
+                <Entity Active="true" FileIndex="0" Group="0" ID="8" Name="level_wood_panneling_door_1" Rotation="0 -6.28319 0" Scale="1 1 1" Tag="" WorldPos="-14 0 -1.5">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="TextEntry" Value="" />
+                        <Var Name="StartPos" Value="" />
+                        <Var Name="MapFile" Value="" />
+                        <Var Name="Locked" Value="false" />
+                        <Var Name="LockedSound" Value="" />
+                        <Var Name="LockedTextCat" Value="" />
+                        <Var Name="LockedTextEntry" Value="" />
+                        <Var Name="ShowStats" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="1" Group="0" ID="85" Name="factory_corridor_01_door_1" Rotation="0 -7.85398 0" Scale="1 1 1" Tag="" WorldPos="-1.25 0 -1.5">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Locked" Value="false" />
+                        <Var Name="OpenAmount" Value="0" />
+                        <Var Name="DisableBreakable" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="1" Group="0" ID="87" Name="factory_corridor_01_door_2" Rotation="0 -7.85398 0" Scale="1 1 1" Tag="" WorldPos="19.75 0 -12">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Locked" Value="false" />
+                        <Var Name="OpenAmount" Value="0" />
+                        <Var Name="DisableBreakable" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="2" Group="0" ID="89" Name="prison_section_plain_static_1" Rotation="0 -15.708 0" Scale="1 1 1" Tag="" WorldPos="9.75 0 -10.5">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="2" Group="0" ID="91" Name="prison_section_plain_static_2" Rotation="0 -18.8496 0" Scale="1 1 1" Tag="" WorldPos="1.25 0 -13.5">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="2" Group="0" ID="92" Name="prison_section_plain_static_3" Rotation="0 -18.8496 0" Scale="1 1 1" Tag="" WorldPos="13.5 0 -13.5">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="3" Group="0" ID="94" Name="male_corpse_1" Rotation="0.523598 0.261799 0" Scale="2 2 2" Tag="" WorldPos="9.5 0 -8.75">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+            </Entities>
+            <Misc />
+            <StaticObjectCombos />
+        </MapContents>
+    </MapData>
+</Level>

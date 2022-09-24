@@ -1,0 +1,113 @@
+int ExitLeversInt = 0;
+
+void OnStart()
+{  
+
+	AddEntityCollideCallback("Player", "EnginnerCageRoomActivate_1", "CageRoomEncounter", true, 1);  ///////
+	AddEntityCollideCallback("Player", "EnginnerCageRoomActivate_2", "CageRoomEncounter", true, 1);  /////// Activates the encounter with enginner in the cage room
+	SetGlobalVarInt("ExitLevers", 0);
+}
+
+
+
+
+
+void OnEnter()
+{ 
+	PlayMusic("Basement Ambience 2", true, 1, 0.1, 10, false);
+	SetSanityDrainDisabled(true);
+}
+
+
+
+
+void OnLeave()
+{ 
+	
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////SCRIPTS/////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+/////////////////////////////////////Cage Room/////////////////////////////////////////////
+
+void CageRoomEncounter(string &in asParent, string &in asChild, int alState)
+	{	
+		SetEntityActive("engineer_1", true);
+		
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_1", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_2", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_3", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_4", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_5", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_6", 4, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_4", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_7", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_9", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_10", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_11", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_12", 0, "");
+		AddEnemyPatrolNode("engineer_1", "PathEnginnerCageRoom_13", 0, "");
+	}
+	
+/////////////////////////////////////Puzzles/////////////////////////////////////////////
+
+
+/////////////////////////////////////Exit Door Lever Puzzle//////////////////////////////
+
+void LeverExit(string &in asEntity, int LeverState)
+{
+	
+	if(ExitLeversInt < 3) {
+		SetMessage("Message", "BasementExitLever", 3);
+		AddQuest("MansionBasementLeverPuzzle", "MansionBasementLevelPuzzle");
+		return;
+		
+		}
+	
+	if(LeverState == 1) {
+	
+			SetMoveObjectState("castle_portcullis_2", 1);
+			SetLeverStuckState("lever_small01_1", 1, true);
+			PlaySoundAtEntity("", "lever_wood_min.snt", asEntity, 0, false);
+			CompleteQuest("MansionBasementLeverPuzzle", "LabMachinery");
+		}
+}
+		
+
+
+
+void LeverPuzzle_1(string &in asEntity, int LeverState)
+{
+	if(LeverState == 1) {
+		ExitLeversInt = ExitLeversInt + 1;
+		SetLeverStuckState("lever_nice01_1", 1, true);
+		PlaySoundAtEntity("", "lever_wood_min.snt", asEntity, 0, false);
+	
+	}
+
+}
+void LeverPuzzle_2(string &in asEntity, int LeverState)
+{
+	if(LeverState == 1) {
+		ExitLeversInt = ExitLeversInt + 1;
+		SetLeverStuckState("lever_nice01_2", 1, true);
+		PlaySoundAtEntity("", "lever_wood_min.snt", asEntity, 0, false);
+	
+	}
+
+}
+void LeverPuzzle_3(string &in asEntity, int LeverState)
+{
+	if(LeverState == 1) {
+		ExitLeversInt = ExitLeversInt + 1;
+		SetLeverStuckState("lever_nice01_3", 1, true);
+		PlaySoundAtEntity("", "lever_wood_min.snt", asEntity, 0, false);
+	
+	}
+}
